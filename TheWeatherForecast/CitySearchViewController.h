@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlaceSearchViewController.h
 //  TheWeatherForecast
 //
 //  Created by Avenue Brazil on 8/15/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CitySearchViewController : UIViewController
 
 @end
-
