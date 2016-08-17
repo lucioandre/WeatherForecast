@@ -7,16 +7,35 @@
 //
 
 #import "CitySearchViewController.h"
+#import "AFNetworking.h"
+#import "RACAFNetworking.h"
+#import "APIClient.h"
 
 @interface CitySearchViewController ()
-
+@property (nonatomic, strong) UISearchController *searchController;
 @end
 
 @implementation CitySearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.dimsBackgroundDuringPresentation = YES;
+    self.searchController.definesPresentationContext = YES;
+    self.searchController.delegate = self;
+    self.resultsTableView.tableHeaderView = self.searchController.searchBar;
+    self.searchController.searchBar.placeholder = @"Search for new places";
+    [self.searchController setActive:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+}
+
+- (void)didPresentSearchController:(UISearchController *)searchController {
+    [searchController.searchBar becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -5,6 +5,7 @@
 
 target 'TheWeatherForecast' do
     pod 'ReactiveCocoa', '~> 2.5'
+    pod 'AFNetworking', '~> 2.5.4'
 end
 
 target 'TheWeatherForecastTests' do

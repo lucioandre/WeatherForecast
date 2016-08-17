@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-466" y="337"/>
         </scene>
-        <!--Cities View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CitiesViewController" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HBF-VG-iw4" id="Hxz-qd-q4G">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -55,28 +55,58 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i6y-64-pT5" secondAttribute="bottom" id="8Ab-5r-PSq"/>
-                            <constraint firstItem="i6y-64-pT5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L1b-fN-8zU"/>
+                            <constraint firstItem="i6y-64-pT5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="edf-Tw-yf3"/>
                             <constraint firstAttribute="trailing" secondItem="i6y-64-pT5" secondAttribute="trailing" id="qg9-TR-XNY"/>
                             <constraint firstItem="i6y-64-pT5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s5j-Xm-hlc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cWU-nb-LEG"/>
+                    <navigationItem key="navigationItem" title="Title" id="Vmp-yT-QxP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cOq-eI-8aZ">
+                            <connections>
+                                <action selector="presentCitySearch:" destination="BYZ-38-t0r" id="Q4a-H3-6JS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="citiesTableView" destination="i6y-64-pT5" id="n4U-x1-ebq"/>
-                        <outlet property="searchDisplayController" destination="eAX-4T-sgb" id="6w5-90-GO2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="eAX-4T-sgb">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="Db3-MW-qfH"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="xTI-Nr-YYN"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="uHM-9c-vt3"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="qsD-ZB-tdD"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="279" y="337"/>
+        </scene>
+        <!--City Search View Controller-->
+        <scene sceneID="bB1-k5-phq">
+            <objects>
+                <viewController storyboardIdentifier="CitySearchViewController" id="Ljw-xm-EGc" customClass="CitySearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wmc-it-A9G"/>
+                        <viewControllerLayoutGuide type="bottom" id="lBo-Wx-c4o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xmB-sC-lt3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hch-bF-j5j">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hch-bF-j5j" firstAttribute="leading" secondItem="xmB-sC-lt3" secondAttribute="leading" id="2Ez-8E-nzg"/>
+                            <constraint firstAttribute="trailing" secondItem="Hch-bF-j5j" secondAttribute="trailing" id="SpM-nt-kG1"/>
+                            <constraint firstItem="lBo-Wx-c4o" firstAttribute="top" secondItem="Hch-bF-j5j" secondAttribute="bottom" id="cuz-rr-ZPn"/>
+                            <constraint firstItem="Hch-bF-j5j" firstAttribute="top" secondItem="xmB-sC-lt3" secondAttribute="top" id="x0P-OU-o8W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultsTableView" destination="Hch-bF-j5j" id="Teq-bO-6Hx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syy-8C-jlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="337"/>
         </scene>
     </scenes>
 </document>

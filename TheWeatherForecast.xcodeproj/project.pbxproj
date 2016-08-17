@@ -21,6 +21,13 @@
 		336006BF1D62716600ACDF90 /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336006BE1D62716600ACDF90 /* CityTableViewCell.m */; };
 		336006C11D6271A000ACDF90 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336006C01D6271A000ACDF90 /* CityTableViewCell.xib */; };
 		33F93C021D628410005861DD /* UIView+XIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C011D628410005861DD /* UIView+XIB.m */; };
+		33F93C171D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C0D1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m */; };
+		33F93C181D62C150005861DD /* AFHTTPSessionManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C0F1D62C150005861DD /* AFHTTPSessionManager+RACSupport.m */; };
+		33F93C191D62C150005861DD /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C101D62C150005861DD /* AFNetworking */; };
+		33F93C1A1D62C150005861DD /* AFURLConnectionOperation+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C121D62C150005861DD /* AFURLConnectionOperation+RACSupport.m */; };
+		33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C161D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m */; };
+		33F93C1F1D63D52F005861DD /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C1E1D63D52F005861DD /* APIClient.m */; };
+		33F93C221D63D619005861DD /* APISignalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C211D63D619005861DD /* APISignalManager.m */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +76,21 @@
 		336006C01D6271A000ACDF90 /* CityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		33F93C001D628410005861DD /* UIView+XIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XIB.h"; sourceTree = "<group>"; };
 		33F93C011D628410005861DD /* UIView+XIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XIB.m"; sourceTree = "<group>"; };
+		33F93C0C1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperationManager+RACSupport.h"; sourceTree = "<group>"; };
+		33F93C0D1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+RACSupport.m"; sourceTree = "<group>"; };
+		33F93C0E1D62C150005861DD /* AFHTTPSessionManager+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+RACSupport.h"; sourceTree = "<group>"; };
+		33F93C0F1D62C150005861DD /* AFHTTPSessionManager+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+RACSupport.m"; sourceTree = "<group>"; };
+		33F93C101D62C150005861DD /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = file; path = AFNetworking; sourceTree = "<group>"; };
+		33F93C111D62C150005861DD /* AFURLConnectionOperation+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFURLConnectionOperation+RACSupport.h"; sourceTree = "<group>"; };
+		33F93C121D62C150005861DD /* AFURLConnectionOperation+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFURLConnectionOperation+RACSupport.m"; sourceTree = "<group>"; };
+		33F93C131D62C150005861DD /* RACAFNetworking-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACAFNetworking-Prefix.pch"; sourceTree = "<group>"; };
+		33F93C141D62C150005861DD /* RACAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACAFNetworking.h; sourceTree = "<group>"; };
+		33F93C151D62C150005861DD /* RACSubscriber+AFProgressCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSubscriber+AFProgressCallbacks.h"; sourceTree = "<group>"; };
+		33F93C161D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSubscriber+AFProgressCallbacks.m"; sourceTree = "<group>"; };
+		33F93C1D1D63D52F005861DD /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		33F93C1E1D63D52F005861DD /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		33F93C201D63D619005861DD /* APISignalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APISignalManager.h; sourceTree = "<group>"; };
+		33F93C211D63D619005861DD /* APISignalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APISignalManager.m; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +159,7 @@
 				336006B51D623A6000ACDF90 /* Views */,
 				336006B41D623A3200ACDF90 /* Models */,
 				336006C21D627DAC00ACDF90 /* Utilities */,
+				33F93C0A1D62C042005861DD /* Vendor */,
 				336006801D621B0D00ACDF90 /* AppDelegate.h */,
 				336006811D621B0D00ACDF90 /* AppDelegate.m */,
 				336006861D621B0D00ACDF90 /* Main.storyboard */,
@@ -178,6 +201,10 @@
 		336006B31D622FE300ACDF90 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				33F93C1D1D63D52F005861DD /* APIClient.h */,
+				33F93C1E1D63D52F005861DD /* APIClient.m */,
+				33F93C201D63D619005861DD /* APISignalManager.h */,
+				33F93C211D63D619005861DD /* APISignalManager.m */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -219,6 +246,32 @@
 				33F93C011D628410005861DD /* UIView+XIB.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		33F93C0A1D62C042005861DD /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C0B1D62C04E005861DD /* AFNetworking+RAC */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		33F93C0B1D62C04E005861DD /* AFNetworking+RAC */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C0C1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.h */,
+				33F93C0D1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m */,
+				33F93C0E1D62C150005861DD /* AFHTTPSessionManager+RACSupport.h */,
+				33F93C0F1D62C150005861DD /* AFHTTPSessionManager+RACSupport.m */,
+				33F93C101D62C150005861DD /* AFNetworking */,
+				33F93C111D62C150005861DD /* AFURLConnectionOperation+RACSupport.h */,
+				33F93C121D62C150005861DD /* AFURLConnectionOperation+RACSupport.m */,
+				33F93C131D62C150005861DD /* RACAFNetworking-Prefix.pch */,
+				33F93C141D62C150005861DD /* RACAFNetworking.h */,
+				33F93C151D62C150005861DD /* RACSubscriber+AFProgressCallbacks.h */,
+				33F93C161D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m */,
+			);
+			name = "AFNetworking+RAC";
 			sourceTree = "<group>";
 		};
 		49C867BE2113B39A82024948 /* Pods */ = {
@@ -339,6 +392,7 @@
 				336006901D621B0D00ACDF90 /* LaunchScreen.storyboard in Resources */,
 				3360068D1D621B0D00ACDF90 /* Assets.xcassets in Resources */,
 				336006C11D6271A000ACDF90 /* CityTableViewCell.xib in Resources */,
+				33F93C191D62C150005861DD /* AFNetworking in Resources */,
 				336006881D621B0D00ACDF90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,10 +469,16 @@
 				336006BF1D62716600ACDF90 /* CityTableViewCell.m in Sources */,
 				336006B91D623DFF00ACDF90 /* CitySearchViewController.m in Sources */,
 				336006BC1D623E3A00ACDF90 /* ForecastViewController.m in Sources */,
+				33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */,
+				33F93C221D63D619005861DD /* APISignalManager.m in Sources */,
 				336006851D621B0D00ACDF90 /* CitiesViewController.m in Sources */,
+				33F93C1A1D62C150005861DD /* AFURLConnectionOperation+RACSupport.m in Sources */,
 				336006821D621B0D00ACDF90 /* AppDelegate.m in Sources */,
+				33F93C171D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m in Sources */,
 				3360067F1D621B0D00ACDF90 /* main.m in Sources */,
 				33F93C021D628410005861DD /* UIView+XIB.m in Sources */,
+				33F93C1F1D63D52F005861DD /* APIClient.m in Sources */,
+				33F93C181D62C150005861DD /* AFHTTPSessionManager+RACSupport.m in Sources */,
 				3360068B1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

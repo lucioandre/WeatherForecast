@@ -8,6 +8,7 @@
 
 #import "CitiesViewController.h"
 #import "CityTableViewCell.h"
+#import "CitySearchViewController.h"
 
 @interface CitiesViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *citiesTableView;
@@ -25,6 +26,15 @@
     
     self.title = @"Weather Forecast";
 }
+
+#pragma mark - Actions
+
+- (IBAction)presentCitySearch:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    CitySearchViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"CitySearchViewController"];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 
 #pragma mark - Table View Data Source
 
