@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Search</key>
+	<string>/premium/v1/search.ashx</string>
+	<key>Weather</key>
+	<string>/premium/v1/weather.ashx</string>
+</dict>
+</plist>

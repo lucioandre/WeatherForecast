@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchResultsTableViewCell">
+            <connections>
+                <outlet property="descriptionLabel" destination="Nks-hS-Bui" id="mvg-j2-nnG"/>
+                <outlet property="titleLabel" destination="lye-4v-VPP" id="pDR-gO-r04"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="BELO HORIZONTE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lye-4v-VPP">
+                    <rect key="frame" x="14" y="10" width="540" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7l-NJ-3Zx">
+                    <rect key="frame" x="562" y="21" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Zyp-5q-bzl"/>
+                        <constraint firstAttribute="width" constant="30" id="zho-YO-8YJ"/>
+                    </constraints>
+                    <state key="normal" image="AddIcon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="998" text="Minas Gerais, Brazil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nks-hS-Bui">
+                    <rect key="frame" x="14" y="43" width="540" height="18"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="O7l-NJ-3Zx" secondAttribute="trailing" constant="8" id="Drz-hG-ljZ"/>
+                <constraint firstItem="Nks-hS-Bui" firstAttribute="top" secondItem="lye-4v-VPP" secondAttribute="bottom" constant="3" id="TXE-iE-LpR"/>
+                <constraint firstAttribute="bottom" secondItem="Nks-hS-Bui" secondAttribute="bottom" constant="10" id="f3J-gU-AOX"/>
+                <constraint firstItem="O7l-NJ-3Zx" firstAttribute="leading" secondItem="Nks-hS-Bui" secondAttribute="trailing" constant="8" id="kN4-dt-J7W"/>
+                <constraint firstItem="lye-4v-VPP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="qoU-bp-LgD"/>
+                <constraint firstItem="Nks-hS-Bui" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="tbB-mO-7Ev"/>
+                <constraint firstItem="lye-4v-VPP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="wRb-vC-Qvx"/>
+                <constraint firstItem="O7l-NJ-3Zx" firstAttribute="leading" secondItem="lye-4v-VPP" secondAttribute="trailing" constant="8" id="zlO-0W-25X"/>
+                <constraint firstItem="O7l-NJ-3Zx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zuA-yL-5Hx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="595" y="499.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AddIcon" width="23" height="23"/>
+    </resources>
+</document>

@@ -1,1211 +1,786 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>010C23DA52D9B047442E4E17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9A79CA764B71C7ADF17FA13</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>088A2A00D5F138237F2E900D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TheWeatherForecast.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006711D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3360067C1D621B0D00ACDF90</string>
-				<string>336006991D621B0D00ACDF90</string>
-				<string>336006A41D621B0D00ACDF90</string>
-				<string>3360067B1D621B0D00ACDF90</string>
-				<string>49C867BE2113B39A82024948</string>
-				<string>010C23DA52D9B047442E4E17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006721D621B0D00ACDF90</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Lucio</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>336006791D621B0D00ACDF90</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-					<key>336006951D621B0D00ACDF90</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>336006791D621B0D00ACDF90</string>
-					</dict>
-					<key>336006A01D621B0D00ACDF90</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>336006791D621B0D00ACDF90</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>336006751D621B0D00ACDF90</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>336006711D621B0D00ACDF90</string>
-			<key>productRefGroup</key>
-			<string>3360067B1D621B0D00ACDF90</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>336006791D621B0D00ACDF90</string>
-				<string>336006951D621B0D00ACDF90</string>
-				<string>336006A01D621B0D00ACDF90</string>
-			</array>
-		</dict>
-		<key>336006751D621B0D00ACDF90</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>336006A81D621B0D00ACDF90</string>
-				<string>336006A91D621B0D00ACDF90</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>336006761D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>336006851D621B0D00ACDF90</string>
-				<string>336006821D621B0D00ACDF90</string>
-				<string>3360067F1D621B0D00ACDF90</string>
-				<string>3360068B1D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>336006771D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>83CDDC7CAA39F9555EF83767</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>336006781D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>336006901D621B0D00ACDF90</string>
-				<string>3360068D1D621B0D00ACDF90</string>
-				<string>336006881D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>336006791D621B0D00ACDF90</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>336006AA1D621B0D00ACDF90</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D853B9E4C865DEF0EB834F91</string>
-				<string>336006761D621B0D00ACDF90</string>
-				<string>336006771D621B0D00ACDF90</string>
-				<string>336006781D621B0D00ACDF90</string>
-				<string>A7F170C32AF433B08AE449AC</string>
-				<string>585B5A12727CC4F52C4371F6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TheWeatherForecast</string>
-			<key>productName</key>
-			<string>TheWeatherForecast</string>
-			<key>productReference</key>
-			<string>3360067A1D621B0D00ACDF90</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>3360067A1D621B0D00ACDF90</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TheWeatherForecast.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3360067B1D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3360067A1D621B0D00ACDF90</string>
-				<string>336006961D621B0D00ACDF90</string>
-				<string>336006A11D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360067C1D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>336006801D621B0D00ACDF90</string>
-				<string>336006811D621B0D00ACDF90</string>
-				<string>336006831D621B0D00ACDF90</string>
-				<string>336006841D621B0D00ACDF90</string>
-				<string>336006861D621B0D00ACDF90</string>
-				<string>3360068C1D621B0D00ACDF90</string>
-				<string>3360068E1D621B0D00ACDF90</string>
-				<string>336006911D621B0D00ACDF90</string>
-				<string>336006891D621B0D00ACDF90</string>
-				<string>3360067D1D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TheWeatherForecast</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360067D1D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3360067E1D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360067E1D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360067F1D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3360067E1D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>336006801D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006811D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006821D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>336006811D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>336006831D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006841D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006851D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>336006841D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>336006861D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>336006871D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006871D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006881D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>336006861D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>336006891D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3360068A1D621B0D00ACDF90</string>
-			</array>
-			<key>currentVersion</key>
-			<string>3360068A1D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>TheWeatherForecast.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>3360068A1D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>TheWeatherForecast.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360068B1D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>336006891D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3360068C1D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360068D1D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3360068C1D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3360068E1D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3360068F1D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360068F1D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006901D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3360068E1D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>336006911D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006921D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3360069B1D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>336006931D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>336006941D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>336006951D621B0D00ACDF90</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>336006AD1D621B0D00ACDF90</string>
-			<key>buildPhases</key>
-			<array>
-				<string>336006921D621B0D00ACDF90</string>
-				<string>336006931D621B0D00ACDF90</string>
-				<string>336006941D621B0D00ACDF90</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>336006981D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TheWeatherForecastTests</string>
-			<key>productName</key>
-			<string>TheWeatherForecastTests</string>
-			<key>productReference</key>
-			<string>336006961D621B0D00ACDF90</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>336006961D621B0D00ACDF90</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TheWeatherForecastTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>336006971D621B0D00ACDF90</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>336006721D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>336006791D621B0D00ACDF90</string>
-			<key>remoteInfo</key>
-			<string>TheWeatherForecast</string>
-		</dict>
-		<key>336006981D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>336006791D621B0D00ACDF90</string>
-			<key>targetProxy</key>
-			<string>336006971D621B0D00ACDF90</string>
-		</dict>
-		<key>336006991D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3360069A1D621B0D00ACDF90</string>
-				<string>3360069C1D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TheWeatherForecastTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360069A1D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TheWeatherForecastTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360069B1D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3360069A1D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3360069C1D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360069D1D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>336006A61D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3360069E1D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3360069F1D621B0D00ACDF90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>336006A01D621B0D00ACDF90</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>336006B01D621B0D00ACDF90</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3360069D1D621B0D00ACDF90</string>
-				<string>3360069E1D621B0D00ACDF90</string>
-				<string>3360069F1D621B0D00ACDF90</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>336006A31D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TheWeatherForecastUITests</string>
-			<key>productName</key>
-			<string>TheWeatherForecastUITests</string>
-			<key>productReference</key>
-			<string>336006A11D621B0D00ACDF90</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>336006A11D621B0D00ACDF90</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TheWeatherForecastUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>336006A21D621B0D00ACDF90</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>336006721D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>336006791D621B0D00ACDF90</string>
-			<key>remoteInfo</key>
-			<string>TheWeatherForecast</string>
-		</dict>
-		<key>336006A31D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>336006791D621B0D00ACDF90</string>
-			<key>targetProxy</key>
-			<string>336006A21D621B0D00ACDF90</string>
-		</dict>
-		<key>336006A41D621B0D00ACDF90</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>336006A51D621B0D00ACDF90</string>
-				<string>336006A71D621B0D00ACDF90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TheWeatherForecastUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006A51D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TheWeatherForecastUITests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006A61D621B0D00ACDF90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>336006A51D621B0D00ACDF90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>336006A71D621B0D00ACDF90</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>336006A81D621B0D00ACDF90</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>336006A91D621B0D00ACDF90</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>336006AA1D621B0D00ACDF90</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>336006AB1D621B0D00ACDF90</string>
-				<string>336006AC1D621B0D00ACDF90</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>336006AB1D621B0D00ACDF90</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>088A2A00D5F138237F2E900D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TheWeatherForecast/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Lucio.TheWeatherForecast</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>336006AC1D621B0D00ACDF90</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>51A8904634B6042EBC2B5449</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TheWeatherForecast/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Lucio.TheWeatherForecast</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>336006AD1D621B0D00ACDF90</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>336006AE1D621B0D00ACDF90</string>
-				<string>336006AF1D621B0D00ACDF90</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>336006AE1D621B0D00ACDF90</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TheWeatherForecastTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Lucio.TheWeatherForecastTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TheWeatherForecast.app/TheWeatherForecast</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>336006AF1D621B0D00ACDF90</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TheWeatherForecastTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Lucio.TheWeatherForecastTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TheWeatherForecast.app/TheWeatherForecast</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>336006B01D621B0D00ACDF90</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>336006B11D621B0D00ACDF90</string>
-				<string>336006B21D621B0D00ACDF90</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>336006B11D621B0D00ACDF90</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>TheWeatherForecastUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Lucio.TheWeatherForecastUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>TheWeatherForecast</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>336006B21D621B0D00ACDF90</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>TheWeatherForecastUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Lucio.TheWeatherForecastUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>TheWeatherForecast</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>49C867BE2113B39A82024948</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>088A2A00D5F138237F2E900D</string>
-				<string>51A8904634B6042EBC2B5449</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>51A8904634B6042EBC2B5449</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TheWeatherForecast.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>585B5A12727CC4F52C4371F6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>83CDDC7CAA39F9555EF83767</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9A79CA764B71C7ADF17FA13</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A7F170C32AF433B08AE449AC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B9A79CA764B71C7ADF17FA13</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-TheWeatherForecast.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D853B9E4C865DEF0EB834F91</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>336006721D621B0D00ACDF90</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3360067F1D621B0D00ACDF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3360067E1D621B0D00ACDF90 /* main.m */; };
+		336006821D621B0D00ACDF90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 336006811D621B0D00ACDF90 /* AppDelegate.m */; };
+		336006851D621B0D00ACDF90 /* CitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336006841D621B0D00ACDF90 /* CitiesViewController.m */; };
+		336006881D621B0D00ACDF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336006861D621B0D00ACDF90 /* Main.storyboard */; };
+		3360068B1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 336006891D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld */; };
+		3360068D1D621B0D00ACDF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3360068C1D621B0D00ACDF90 /* Assets.xcassets */; };
+		336006901D621B0D00ACDF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3360068E1D621B0D00ACDF90 /* LaunchScreen.storyboard */; };
+		3360069B1D621B0D00ACDF90 /* TheWeatherForecastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3360069A1D621B0D00ACDF90 /* TheWeatherForecastTests.m */; };
+		336006A61D621B0D00ACDF90 /* TheWeatherForecastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 336006A51D621B0D00ACDF90 /* TheWeatherForecastUITests.m */; };
+		336006B91D623DFF00ACDF90 /* CitySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336006B81D623DFF00ACDF90 /* CitySearchViewController.m */; };
+		336006BC1D623E3A00ACDF90 /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336006BB1D623E3A00ACDF90 /* ForecastViewController.m */; };
+		336006BF1D62716600ACDF90 /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336006BE1D62716600ACDF90 /* CityTableViewCell.m */; };
+		336006C11D6271A000ACDF90 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336006C01D6271A000ACDF90 /* CityTableViewCell.xib */; };
+		33F93C021D628410005861DD /* UIView+XIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C011D628410005861DD /* UIView+XIB.m */; };
+		33F93C171D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C0D1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m */; };
+		33F93C181D62C150005861DD /* AFHTTPSessionManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C0F1D62C150005861DD /* AFHTTPSessionManager+RACSupport.m */; };
+		33F93C191D62C150005861DD /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C101D62C150005861DD /* AFNetworking */; };
+		33F93C1A1D62C150005861DD /* AFURLConnectionOperation+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C121D62C150005861DD /* AFURLConnectionOperation+RACSupport.m */; };
+		33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C161D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m */; };
+		33F93C1F1D63D52F005861DD /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C1E1D63D52F005861DD /* APIClient.m */; };
+		33F93C221D63D619005861DD /* APISignalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C211D63D619005861DD /* APISignalManager.m */; };
+		33F93C261D64024B005861DD /* APIEndPoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C251D64024B005861DD /* APIEndPoints.plist */; };
+		33F93C291D6403FA005861DD /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C281D6403FA005861DD /* Utils.m */; };
+		33F93C2C1D64081C005861DD /* APIMappingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C2B1D64081C005861DD /* APIMappingModel.m */; };
+		33F93C351D654ADD005861DD /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */; };
+		33F93C381D654DE0005861DD /* SearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */; };
+		33F93C401D657161005861DD /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C3F1D657161005861DD /* CoreDataManager.m */; };
+		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		336006971D621B0D00ACDF90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 336006721D621B0D00ACDF90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 336006791D621B0D00ACDF90;
+			remoteInfo = TheWeatherForecast;
+		};
+		336006A21D621B0D00ACDF90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 336006721D621B0D00ACDF90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 336006791D621B0D00ACDF90;
+			remoteInfo = TheWeatherForecast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		088A2A00D5F138237F2E900D /* Pods-TheWeatherForecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.debug.xcconfig"; sourceTree = "<group>"; };
+		3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3360067E1D621B0D00ACDF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		336006801D621B0D00ACDF90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		336006811D621B0D00ACDF90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		336006831D621B0D00ACDF90 /* CitiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitiesViewController.h; sourceTree = "<group>"; };
+		336006841D621B0D00ACDF90 /* CitiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitiesViewController.m; sourceTree = "<group>"; };
+		336006871D621B0D00ACDF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3360068A1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheWeatherForecast.xcdatamodel; sourceTree = "<group>"; };
+		3360068C1D621B0D00ACDF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3360068F1D621B0D00ACDF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		336006911D621B0D00ACDF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336006961D621B0D00ACDF90 /* TheWeatherForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheWeatherForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3360069A1D621B0D00ACDF90 /* TheWeatherForecastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheWeatherForecastTests.m; sourceTree = "<group>"; };
+		3360069C1D621B0D00ACDF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336006A11D621B0D00ACDF90 /* TheWeatherForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheWeatherForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		336006A51D621B0D00ACDF90 /* TheWeatherForecastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheWeatherForecastUITests.m; sourceTree = "<group>"; };
+		336006A71D621B0D00ACDF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336006B71D623DFF00ACDF90 /* CitySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySearchViewController.h; sourceTree = "<group>"; };
+		336006B81D623DFF00ACDF90 /* CitySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySearchViewController.m; sourceTree = "<group>"; };
+		336006BA1D623E3A00ACDF90 /* ForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastViewController.h; sourceTree = "<group>"; };
+		336006BB1D623E3A00ACDF90 /* ForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastViewController.m; sourceTree = "<group>"; };
+		336006BD1D62716600ACDF90 /* CityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewCell.h; sourceTree = "<group>"; };
+		336006BE1D62716600ACDF90 /* CityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewCell.m; sourceTree = "<group>"; };
+		336006C01D6271A000ACDF90 /* CityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C001D628410005861DD /* UIView+XIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XIB.h"; sourceTree = "<group>"; };
+		33F93C011D628410005861DD /* UIView+XIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XIB.m"; sourceTree = "<group>"; };
+		33F93C0C1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperationManager+RACSupport.h"; sourceTree = "<group>"; };
+		33F93C0D1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+RACSupport.m"; sourceTree = "<group>"; };
+		33F93C0E1D62C150005861DD /* AFHTTPSessionManager+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+RACSupport.h"; sourceTree = "<group>"; };
+		33F93C0F1D62C150005861DD /* AFHTTPSessionManager+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+RACSupport.m"; sourceTree = "<group>"; };
+		33F93C101D62C150005861DD /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = file; path = AFNetworking; sourceTree = "<group>"; };
+		33F93C111D62C150005861DD /* AFURLConnectionOperation+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFURLConnectionOperation+RACSupport.h"; sourceTree = "<group>"; };
+		33F93C121D62C150005861DD /* AFURLConnectionOperation+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFURLConnectionOperation+RACSupport.m"; sourceTree = "<group>"; };
+		33F93C131D62C150005861DD /* RACAFNetworking-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACAFNetworking-Prefix.pch"; sourceTree = "<group>"; };
+		33F93C141D62C150005861DD /* RACAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACAFNetworking.h; sourceTree = "<group>"; };
+		33F93C151D62C150005861DD /* RACSubscriber+AFProgressCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSubscriber+AFProgressCallbacks.h"; sourceTree = "<group>"; };
+		33F93C161D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSubscriber+AFProgressCallbacks.m"; sourceTree = "<group>"; };
+		33F93C1D1D63D52F005861DD /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		33F93C1E1D63D52F005861DD /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		33F93C201D63D619005861DD /* APISignalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APISignalManager.h; sourceTree = "<group>"; };
+		33F93C211D63D619005861DD /* APISignalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APISignalManager.m; sourceTree = "<group>"; };
+		33F93C251D64024B005861DD /* APIEndPoints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIEndPoints.plist; sourceTree = "<group>"; };
+		33F93C271D6403FA005861DD /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		33F93C281D6403FA005861DD /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		33F93C2A1D64081C005861DD /* APIMappingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIMappingModel.h; sourceTree = "<group>"; };
+		33F93C2B1D64081C005861DD /* APIMappingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIMappingModel.m; sourceTree = "<group>"; };
+		33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C361D654DE0005861DD /* SearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewCell.h; sourceTree = "<group>"; };
+		33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewCell.m; sourceTree = "<group>"; };
+		33F93C3E1D657161005861DD /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		33F93C3F1D657161005861DD /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
+		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		336006771D621B0D00ACDF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336006931D621B0D00ACDF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3360069E1D621B0D00ACDF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010C23DA52D9B047442E4E17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		336006711D621B0D00ACDF90 = {
+			isa = PBXGroup;
+			children = (
+				3360067C1D621B0D00ACDF90 /* TheWeatherForecast */,
+				336006991D621B0D00ACDF90 /* TheWeatherForecastTests */,
+				336006A41D621B0D00ACDF90 /* TheWeatherForecastUITests */,
+				3360067B1D621B0D00ACDF90 /* Products */,
+				49C867BE2113B39A82024948 /* Pods */,
+				010C23DA52D9B047442E4E17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3360067B1D621B0D00ACDF90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */,
+				336006961D621B0D00ACDF90 /* TheWeatherForecastTests.xctest */,
+				336006A11D621B0D00ACDF90 /* TheWeatherForecastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3360067C1D621B0D00ACDF90 /* TheWeatherForecast */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C3D1D657147005861DD /* Persistence */,
+				336006B31D622FE300ACDF90 /* API */,
+				336006B61D623A6600ACDF90 /* View Controllers */,
+				336006B51D623A6000ACDF90 /* Views */,
+				336006B41D623A3200ACDF90 /* Model */,
+				336006C21D627DAC00ACDF90 /* Utilities */,
+				33F93C0A1D62C042005861DD /* Vendor */,
+				336006801D621B0D00ACDF90 /* AppDelegate.h */,
+				336006811D621B0D00ACDF90 /* AppDelegate.m */,
+				336006861D621B0D00ACDF90 /* Main.storyboard */,
+				3360068C1D621B0D00ACDF90 /* Assets.xcassets */,
+				3360068E1D621B0D00ACDF90 /* LaunchScreen.storyboard */,
+				336006911D621B0D00ACDF90 /* Info.plist */,
+				336006891D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld */,
+				3360067D1D621B0D00ACDF90 /* Supporting Files */,
+			);
+			path = TheWeatherForecast;
+			sourceTree = "<group>";
+		};
+		3360067D1D621B0D00ACDF90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3360067E1D621B0D00ACDF90 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		336006991D621B0D00ACDF90 /* TheWeatherForecastTests */ = {
+			isa = PBXGroup;
+			children = (
+				3360069A1D621B0D00ACDF90 /* TheWeatherForecastTests.m */,
+				3360069C1D621B0D00ACDF90 /* Info.plist */,
+			);
+			path = TheWeatherForecastTests;
+			sourceTree = "<group>";
+		};
+		336006A41D621B0D00ACDF90 /* TheWeatherForecastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				336006A51D621B0D00ACDF90 /* TheWeatherForecastUITests.m */,
+				336006A71D621B0D00ACDF90 /* Info.plist */,
+			);
+			path = TheWeatherForecastUITests;
+			sourceTree = "<group>";
+		};
+		336006B31D622FE300ACDF90 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C1D1D63D52F005861DD /* APIClient.h */,
+				33F93C1E1D63D52F005861DD /* APIClient.m */,
+				33F93C201D63D619005861DD /* APISignalManager.h */,
+				33F93C211D63D619005861DD /* APISignalManager.m */,
+				33F93C251D64024B005861DD /* APIEndPoints.plist */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		336006B41D623A3200ACDF90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C2A1D64081C005861DD /* APIMappingModel.h */,
+				33F93C2B1D64081C005861DD /* APIMappingModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		336006B51D623A6000ACDF90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				336006BD1D62716600ACDF90 /* CityTableViewCell.h */,
+				336006BE1D62716600ACDF90 /* CityTableViewCell.m */,
+				336006C01D6271A000ACDF90 /* CityTableViewCell.xib */,
+				33F93C361D654DE0005861DD /* SearchResultsTableViewCell.h */,
+				33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */,
+				33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		336006B61D623A6600ACDF90 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				336006831D621B0D00ACDF90 /* CitiesViewController.h */,
+				336006841D621B0D00ACDF90 /* CitiesViewController.m */,
+				336006B71D623DFF00ACDF90 /* CitySearchViewController.h */,
+				336006B81D623DFF00ACDF90 /* CitySearchViewController.m */,
+				336006BA1D623E3A00ACDF90 /* ForecastViewController.h */,
+				336006BB1D623E3A00ACDF90 /* ForecastViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		336006C21D627DAC00ACDF90 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C001D628410005861DD /* UIView+XIB.h */,
+				33F93C011D628410005861DD /* UIView+XIB.m */,
+				33F93C271D6403FA005861DD /* Utils.h */,
+				33F93C281D6403FA005861DD /* Utils.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		33F93C0A1D62C042005861DD /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C0B1D62C04E005861DD /* AFNetworking+RAC */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		33F93C0B1D62C04E005861DD /* AFNetworking+RAC */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C0C1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.h */,
+				33F93C0D1D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m */,
+				33F93C0E1D62C150005861DD /* AFHTTPSessionManager+RACSupport.h */,
+				33F93C0F1D62C150005861DD /* AFHTTPSessionManager+RACSupport.m */,
+				33F93C101D62C150005861DD /* AFNetworking */,
+				33F93C111D62C150005861DD /* AFURLConnectionOperation+RACSupport.h */,
+				33F93C121D62C150005861DD /* AFURLConnectionOperation+RACSupport.m */,
+				33F93C131D62C150005861DD /* RACAFNetworking-Prefix.pch */,
+				33F93C141D62C150005861DD /* RACAFNetworking.h */,
+				33F93C151D62C150005861DD /* RACSubscriber+AFProgressCallbacks.h */,
+				33F93C161D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m */,
+			);
+			name = "AFNetworking+RAC";
+			sourceTree = "<group>";
+		};
+		33F93C3D1D657147005861DD /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C3E1D657161005861DD /* CoreDataManager.h */,
+				33F93C3F1D657161005861DD /* CoreDataManager.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		49C867BE2113B39A82024948 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				088A2A00D5F138237F2E900D /* Pods-TheWeatherForecast.debug.xcconfig */,
+				51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		336006791D621B0D00ACDF90 /* TheWeatherForecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336006AA1D621B0D00ACDF90 /* Build configuration list for PBXNativeTarget "TheWeatherForecast" */;
+			buildPhases = (
+				D853B9E4C865DEF0EB834F91 /* Check Pods Manifest.lock */,
+				336006761D621B0D00ACDF90 /* Sources */,
+				336006771D621B0D00ACDF90 /* Frameworks */,
+				336006781D621B0D00ACDF90 /* Resources */,
+				A7F170C32AF433B08AE449AC /* Embed Pods Frameworks */,
+				585B5A12727CC4F52C4371F6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheWeatherForecast;
+			productName = TheWeatherForecast;
+			productReference = 3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		336006951D621B0D00ACDF90 /* TheWeatherForecastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336006AD1D621B0D00ACDF90 /* Build configuration list for PBXNativeTarget "TheWeatherForecastTests" */;
+			buildPhases = (
+				336006921D621B0D00ACDF90 /* Sources */,
+				336006931D621B0D00ACDF90 /* Frameworks */,
+				336006941D621B0D00ACDF90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				336006981D621B0D00ACDF90 /* PBXTargetDependency */,
+			);
+			name = TheWeatherForecastTests;
+			productName = TheWeatherForecastTests;
+			productReference = 336006961D621B0D00ACDF90 /* TheWeatherForecastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		336006A01D621B0D00ACDF90 /* TheWeatherForecastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336006B01D621B0D00ACDF90 /* Build configuration list for PBXNativeTarget "TheWeatherForecastUITests" */;
+			buildPhases = (
+				3360069D1D621B0D00ACDF90 /* Sources */,
+				3360069E1D621B0D00ACDF90 /* Frameworks */,
+				3360069F1D621B0D00ACDF90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				336006A31D621B0D00ACDF90 /* PBXTargetDependency */,
+			);
+			name = TheWeatherForecastUITests;
+			productName = TheWeatherForecastUITests;
+			productReference = 336006A11D621B0D00ACDF90 /* TheWeatherForecastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		336006721D621B0D00ACDF90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Lucio;
+				TargetAttributes = {
+					336006791D621B0D00ACDF90 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					336006951D621B0D00ACDF90 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 336006791D621B0D00ACDF90;
+					};
+					336006A01D621B0D00ACDF90 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 336006791D621B0D00ACDF90;
+					};
+				};
+			};
+			buildConfigurationList = 336006751D621B0D00ACDF90 /* Build configuration list for PBXProject "TheWeatherForecast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 336006711D621B0D00ACDF90;
+			productRefGroup = 3360067B1D621B0D00ACDF90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				336006791D621B0D00ACDF90 /* TheWeatherForecast */,
+				336006951D621B0D00ACDF90 /* TheWeatherForecastTests */,
+				336006A01D621B0D00ACDF90 /* TheWeatherForecastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		336006781D621B0D00ACDF90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336006901D621B0D00ACDF90 /* LaunchScreen.storyboard in Resources */,
+				3360068D1D621B0D00ACDF90 /* Assets.xcassets in Resources */,
+				336006C11D6271A000ACDF90 /* CityTableViewCell.xib in Resources */,
+				33F93C191D62C150005861DD /* AFNetworking in Resources */,
+				33F93C351D654ADD005861DD /* SearchResultsTableViewCell.xib in Resources */,
+				33F93C261D64024B005861DD /* APIEndPoints.plist in Resources */,
+				336006881D621B0D00ACDF90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336006941D621B0D00ACDF90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3360069F1D621B0D00ACDF90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		585B5A12727CC4F52C4371F6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F170C32AF433B08AE449AC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D853B9E4C865DEF0EB834F91 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		336006761D621B0D00ACDF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336006BF1D62716600ACDF90 /* CityTableViewCell.m in Sources */,
+				336006B91D623DFF00ACDF90 /* CitySearchViewController.m in Sources */,
+				336006BC1D623E3A00ACDF90 /* ForecastViewController.m in Sources */,
+				33F93C2C1D64081C005861DD /* APIMappingModel.m in Sources */,
+				33F93C291D6403FA005861DD /* Utils.m in Sources */,
+				33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */,
+				33F93C221D63D619005861DD /* APISignalManager.m in Sources */,
+				336006851D621B0D00ACDF90 /* CitiesViewController.m in Sources */,
+				33F93C1A1D62C150005861DD /* AFURLConnectionOperation+RACSupport.m in Sources */,
+				336006821D621B0D00ACDF90 /* AppDelegate.m in Sources */,
+				33F93C171D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m in Sources */,
+				33F93C381D654DE0005861DD /* SearchResultsTableViewCell.m in Sources */,
+				33F93C401D657161005861DD /* CoreDataManager.m in Sources */,
+				3360067F1D621B0D00ACDF90 /* main.m in Sources */,
+				33F93C021D628410005861DD /* UIView+XIB.m in Sources */,
+				33F93C1F1D63D52F005861DD /* APIClient.m in Sources */,
+				33F93C181D62C150005861DD /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				3360068B1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336006921D621B0D00ACDF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3360069B1D621B0D00ACDF90 /* TheWeatherForecastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3360069D1D621B0D00ACDF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336006A61D621B0D00ACDF90 /* TheWeatherForecastUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		336006981D621B0D00ACDF90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 336006791D621B0D00ACDF90 /* TheWeatherForecast */;
+			targetProxy = 336006971D621B0D00ACDF90 /* PBXContainerItemProxy */;
+		};
+		336006A31D621B0D00ACDF90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 336006791D621B0D00ACDF90 /* TheWeatherForecast */;
+			targetProxy = 336006A21D621B0D00ACDF90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		336006861D621B0D00ACDF90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				336006871D621B0D00ACDF90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3360068E1D621B0D00ACDF90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3360068F1D621B0D00ACDF90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		336006A81D621B0D00ACDF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		336006A91D621B0D00ACDF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		336006AB1D621B0D00ACDF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088A2A00D5F138237F2E900D /* Pods-TheWeatherForecast.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheWeatherForecast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		336006AC1D621B0D00ACDF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheWeatherForecast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		336006AE1D621B0D00ACDF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TheWeatherForecastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheWeatherForecast.app/TheWeatherForecast";
+			};
+			name = Debug;
+		};
+		336006AF1D621B0D00ACDF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TheWeatherForecastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheWeatherForecast.app/TheWeatherForecast";
+			};
+			name = Release;
+		};
+		336006B11D621B0D00ACDF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TheWeatherForecastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TheWeatherForecast;
+			};
+			name = Debug;
+		};
+		336006B21D621B0D00ACDF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TheWeatherForecastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TheWeatherForecast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		336006751D621B0D00ACDF90 /* Build configuration list for PBXProject "TheWeatherForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336006A81D621B0D00ACDF90 /* Debug */,
+				336006A91D621B0D00ACDF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		336006AA1D621B0D00ACDF90 /* Build configuration list for PBXNativeTarget "TheWeatherForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336006AB1D621B0D00ACDF90 /* Debug */,
+				336006AC1D621B0D00ACDF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		336006AD1D621B0D00ACDF90 /* Build configuration list for PBXNativeTarget "TheWeatherForecastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336006AE1D621B0D00ACDF90 /* Debug */,
+				336006AF1D621B0D00ACDF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		336006B01D621B0D00ACDF90 /* Build configuration list for PBXNativeTarget "TheWeatherForecastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336006B11D621B0D00ACDF90 /* Debug */,
+				336006B21D621B0D00ACDF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		336006891D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3360068A1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodel */,
+			);
+			currentVersion = 3360068A1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodel */;
+			path = TheWeatherForecast.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 336006721D621B0D00ACDF90 /* Project object */;
+}
