@@ -28,6 +28,12 @@
 		33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C161D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m */; };
 		33F93C1F1D63D52F005861DD /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C1E1D63D52F005861DD /* APIClient.m */; };
 		33F93C221D63D619005861DD /* APISignalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C211D63D619005861DD /* APISignalManager.m */; };
+		33F93C261D64024B005861DD /* APIEndPoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C251D64024B005861DD /* APIEndPoints.plist */; };
+		33F93C291D6403FA005861DD /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C281D6403FA005861DD /* Utils.m */; };
+		33F93C2C1D64081C005861DD /* APIMappingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C2B1D64081C005861DD /* APIMappingModel.m */; };
+		33F93C351D654ADD005861DD /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */; };
+		33F93C381D654DE0005861DD /* SearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */; };
+		33F93C401D657161005861DD /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C3F1D657161005861DD /* CoreDataManager.m */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +97,16 @@
 		33F93C1E1D63D52F005861DD /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		33F93C201D63D619005861DD /* APISignalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APISignalManager.h; sourceTree = "<group>"; };
 		33F93C211D63D619005861DD /* APISignalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APISignalManager.m; sourceTree = "<group>"; };
+		33F93C251D64024B005861DD /* APIEndPoints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIEndPoints.plist; sourceTree = "<group>"; };
+		33F93C271D6403FA005861DD /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		33F93C281D6403FA005861DD /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		33F93C2A1D64081C005861DD /* APIMappingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIMappingModel.h; sourceTree = "<group>"; };
+		33F93C2B1D64081C005861DD /* APIMappingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIMappingModel.m; sourceTree = "<group>"; };
+		33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C361D654DE0005861DD /* SearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewCell.h; sourceTree = "<group>"; };
+		33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewCell.m; sourceTree = "<group>"; };
+		33F93C3E1D657161005861DD /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		33F93C3F1D657161005861DD /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,10 +170,11 @@
 		3360067C1D621B0D00ACDF90 /* TheWeatherForecast */ = {
 			isa = PBXGroup;
 			children = (
-				336006B61D623A6600ACDF90 /* View Controllers */,
+				33F93C3D1D657147005861DD /* Persistence */,
 				336006B31D622FE300ACDF90 /* API */,
+				336006B61D623A6600ACDF90 /* View Controllers */,
 				336006B51D623A6000ACDF90 /* Views */,
-				336006B41D623A3200ACDF90 /* Models */,
+				336006B41D623A3200ACDF90 /* Model */,
 				336006C21D627DAC00ACDF90 /* Utilities */,
 				33F93C0A1D62C042005861DD /* Vendor */,
 				336006801D621B0D00ACDF90 /* AppDelegate.h */,
@@ -205,15 +222,18 @@
 				33F93C1E1D63D52F005861DD /* APIClient.m */,
 				33F93C201D63D619005861DD /* APISignalManager.h */,
 				33F93C211D63D619005861DD /* APISignalManager.m */,
+				33F93C251D64024B005861DD /* APIEndPoints.plist */,
 			);
 			name = API;
 			sourceTree = "<group>";
 		};
-		336006B41D623A3200ACDF90 /* Models */ = {
+		336006B41D623A3200ACDF90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33F93C2A1D64081C005861DD /* APIMappingModel.h */,
+				33F93C2B1D64081C005861DD /* APIMappingModel.m */,
 			);
-			name = Models;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		336006B51D623A6000ACDF90 /* Views */ = {
@@ -222,6 +242,9 @@
 				336006BD1D62716600ACDF90 /* CityTableViewCell.h */,
 				336006BE1D62716600ACDF90 /* CityTableViewCell.m */,
 				336006C01D6271A000ACDF90 /* CityTableViewCell.xib */,
+				33F93C361D654DE0005861DD /* SearchResultsTableViewCell.h */,
+				33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */,
+				33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -244,6 +267,8 @@
 			children = (
 				33F93C001D628410005861DD /* UIView+XIB.h */,
 				33F93C011D628410005861DD /* UIView+XIB.m */,
+				33F93C271D6403FA005861DD /* Utils.h */,
+				33F93C281D6403FA005861DD /* Utils.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -272,6 +297,15 @@
 				33F93C161D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m */,
 			);
 			name = "AFNetworking+RAC";
+			sourceTree = "<group>";
+		};
+		33F93C3D1D657147005861DD /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C3E1D657161005861DD /* CoreDataManager.h */,
+				33F93C3F1D657161005861DD /* CoreDataManager.m */,
+			);
+			name = Persistence;
 			sourceTree = "<group>";
 		};
 		49C867BE2113B39A82024948 /* Pods */ = {
@@ -393,6 +427,8 @@
 				3360068D1D621B0D00ACDF90 /* Assets.xcassets in Resources */,
 				336006C11D6271A000ACDF90 /* CityTableViewCell.xib in Resources */,
 				33F93C191D62C150005861DD /* AFNetworking in Resources */,
+				33F93C351D654ADD005861DD /* SearchResultsTableViewCell.xib in Resources */,
+				33F93C261D64024B005861DD /* APIEndPoints.plist in Resources */,
 				336006881D621B0D00ACDF90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,12 +505,16 @@
 				336006BF1D62716600ACDF90 /* CityTableViewCell.m in Sources */,
 				336006B91D623DFF00ACDF90 /* CitySearchViewController.m in Sources */,
 				336006BC1D623E3A00ACDF90 /* ForecastViewController.m in Sources */,
+				33F93C2C1D64081C005861DD /* APIMappingModel.m in Sources */,
+				33F93C291D6403FA005861DD /* Utils.m in Sources */,
 				33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */,
 				33F93C221D63D619005861DD /* APISignalManager.m in Sources */,
 				336006851D621B0D00ACDF90 /* CitiesViewController.m in Sources */,
 				33F93C1A1D62C150005861DD /* AFURLConnectionOperation+RACSupport.m in Sources */,
 				336006821D621B0D00ACDF90 /* AppDelegate.m in Sources */,
 				33F93C171D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m in Sources */,
+				33F93C381D654DE0005861DD /* SearchResultsTableViewCell.m in Sources */,
+				33F93C401D657161005861DD /* CoreDataManager.m in Sources */,
 				3360067F1D621B0D00ACDF90 /* main.m in Sources */,
 				33F93C021D628410005861DD /* UIView+XIB.m in Sources */,
 				33F93C1F1D63D52F005861DD /* APIClient.m in Sources */,

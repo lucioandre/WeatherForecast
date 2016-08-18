@@ -9,6 +9,8 @@
 #import "APIClient.h"
 #import "APISignalManager.h"
 #import <ReactiveCocoa.h>
+#import "Mantle.h"
+#import "APIMappingModel.h"
 
 static NSString * const baseURL = @"https://api.worldweatheronline.com";
 
@@ -37,9 +39,12 @@ static NSString * const baseURL = @"https://api.worldweatheronline.com";
 
 + (void)getLocationsForSearchKey:(NSString *)searchKey andCompletion:(void (^)(id response))completion {
     [[[self instance].manager rac_getLocationsForSearchKey:searchKey] subscribeNext:^(id x) {
-        NSLog(@"%@", x);
+        APISearchResults *response = [MTLJSONAdapter modelOfClass:[APISearchResults class] fromJSONDictionary:x error:nil];
+        if (completion) {
+            completion(response);
+        }
     } error:^(NSError *error) {
-        
+        completion(error);
     }];
 }
 

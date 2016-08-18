@@ -9,8 +9,8 @@
 #import "APISignalManager.h"
 #import "AFNetworking.h"
 #import "RACAFNetworking.h"
+#import "Utils.h"
 
-static NSString * const baseEndPoint = @"/premium/v1/weather.ashx";
 static NSString * const worldWeatherOnlineAPIKey = @"6199285363b948979fa31009161608&";
 
 
@@ -32,9 +32,19 @@ static NSString * const worldWeatherOnlineAPIKey = @"6199285363b948979fa31009161
 }
 
 - (RACSignal *)rac_getLocationsForSearchKey:(NSString *)searchKey {
-    NSDictionary *dic = @{@"key":worldWeatherOnlineAPIKey, @"q":searchKey, @"format":@"json", @"num_of_days":@"5"};
-    //Once we are using only one endPoint in this app, it is okay to keep a constant, but if we have more than one is better to use a PList file.
-    return [self.manager rac_GET:baseEndPoint parameters:dic];
+    NSDictionary *dic = @{@"key":worldWeatherOnlineAPIKey, @"q":searchKey, @"format":@"json"};
+    NSString *endPoint = [Utils getEndPointForKey:@"Search"];
+    return [[self.manager rac_GET:endPoint parameters:dic] map:^id(RACTuple *tuple) {
+        return [tuple first];
+    }];
+}
+
+- (RACSignal *)rac_getForecastForLocation:(NSString *)location {
+    NSDictionary *dic = @{@"key":worldWeatherOnlineAPIKey, @"q":location, @"format":@"json", @"num_of_days":@"5"};
+    NSString *endPoint = [Utils getEndPointForKey:@"Weather"];
+    return [[self.manager rac_GET:endPoint parameters:dic] map:^id(RACTuple *tuple) {
+        return [tuple first];
+    }];
 }
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CitySearchViewController : UIViewController <UISearchControllerDelegate>
-@property (nonatomic, weak) IBOutlet UITableView *resultsTableView;
+@interface CitySearchViewController : UIViewController <UISearchControllerDelegate, UISearchBarDelegate>
+
 @end

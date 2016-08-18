@@ -12,27 +12,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="BELO HORIZONTE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drb-xw-pZ2">
-                    <rect key="frame" x="8" y="10" width="536" height="40"/>
+                    <rect key="frame" x="20" y="10" width="572" height="40"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LVv-HI-lUF">
-                    <rect key="frame" x="552" y="10" width="40" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="bw0-Wj-F9I"/>
-                        <constraint firstAttribute="width" constant="40" id="rZG-Oz-Xio"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="LVv-HI-lUF" firstAttribute="leading" secondItem="Drb-xw-pZ2" secondAttribute="trailing" constant="8" id="D2f-ef-Qee"/>
                 <constraint firstAttribute="bottom" secondItem="Drb-xw-pZ2" secondAttribute="bottom" constant="10" id="E6O-x0-ie4"/>
-                <constraint firstItem="LVv-HI-lUF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kfh-Hf-5GV"/>
-                <constraint firstItem="Drb-xw-pZ2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="u02-7W-FNi"/>
+                <constraint firstAttribute="trailing" secondItem="Drb-xw-pZ2" secondAttribute="trailing" constant="8" id="twn-rq-6W6"/>
+                <constraint firstItem="Drb-xw-pZ2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="u02-7W-FNi"/>
                 <constraint firstItem="Drb-xw-pZ2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="xTt-hd-HUQ"/>
-                <constraint firstAttribute="trailing" secondItem="LVv-HI-lUF" secondAttribute="trailing" constant="8" id="xea-p8-Qxr"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>

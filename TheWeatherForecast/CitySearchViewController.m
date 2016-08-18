@@ -10,33 +10,62 @@
 #import "AFNetworking.h"
 #import "RACAFNetworking.h"
 #import "APIClient.h"
+#import "APIMappingModel.h"
+#import "SearchResultsTableViewCell.h"
 
 @interface CitySearchViewController ()
-@property (nonatomic, strong) UISearchController *searchController;
+@property (nonatomic, weak) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, weak) IBOutlet UITableView *resultsTableView;
+@property (nonatomic, strong) NSArray<SearchResult *> *searchResults;
 @end
 
 @implementation CitySearchViewController
 
+#pragma mark - View Controller Life Cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    self.searchController.dimsBackgroundDuringPresentation = YES;
-    self.searchController.definesPresentationContext = YES;
-    self.searchController.delegate = self;
-    self.resultsTableView.tableHeaderView = self.searchController.searchBar;
-    self.searchController.searchBar.placeholder = @"Search for new places";
-    [self.searchController setActive:YES];
+    self.resultsTableView.estimatedRowHeight = 71;
+    self.resultsTableView.rowHeight = UITableViewAutomaticDimension;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
+#pragma mark - Search Bar Delegate
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+    [APIClient getLocationsForSearchKey:searchBar.text andCompletion:^(id response) {
+        if ([response isKindOfClass:[APISearchResults class]]) {
+            APISearchResults *resultsResponse = response;
+            self.searchResults = [NSArray arrayWithArray:resultsResponse.results];
+            [self.resultsTableView reloadData];
+        }
+    }];
 }
 
-- (void)didPresentSearchController:(UISearchController *)searchController {
-    [searchController.searchBar becomeFirstResponder];
+#pragma mark - Table View Data Source
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.searchResults count];
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SearchResultsTableViewCell *searchResultCell = [self.resultsTableView dequeueReusableCellWithIdentifier:@"searchResultsCell"];
+    if ([self.searchResults count] > indexPath.row) {
+        SearchResult *result = [self.searchResults objectAtIndex:indexPath.row];
+        [searchResultCell setTitle:result.areaNameDescription andDescription:[NSString stringWithFormat:@"%@, %@", result.regionDescription, result.countryDescription]];
+    }
+    return searchResultCell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView anEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+#pragma mark - Table View Delegate
+
+
+#pragma mark - Memory management
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
