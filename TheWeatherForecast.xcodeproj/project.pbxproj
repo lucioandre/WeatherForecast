@@ -34,6 +34,10 @@
 		33F93C351D654ADD005861DD /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */; };
 		33F93C381D654DE0005861DD /* SearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */; };
 		33F93C401D657161005861DD /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C3F1D657161005861DD /* CoreDataManager.m */; };
+		33F93C451D657600005861DD /* Location+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C421D657600005861DD /* Location+CoreDataProperties.m */; };
+		33F93C461D657600005861DD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C441D657600005861DD /* Location.m */; };
+		33F93C4B1D657671005861DD /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C4A1D657671005861DD /* LocationModel.m */; };
+		33F93C4D1D66B5E7005861DD /* ForecastHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +111,13 @@
 		33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewCell.m; sourceTree = "<group>"; };
 		33F93C3E1D657161005861DD /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		33F93C3F1D657161005861DD /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		33F93C411D657600005861DD /* Location+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Location+CoreDataProperties.h"; sourceTree = "<group>"; };
+		33F93C421D657600005861DD /* Location+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Location+CoreDataProperties.m"; sourceTree = "<group>"; };
+		33F93C431D657600005861DD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		33F93C441D657600005861DD /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		33F93C491D657671005861DD /* LocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
+		33F93C4A1D657671005861DD /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
+		33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastHeaderView.xib; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,7 +194,6 @@
 				3360068C1D621B0D00ACDF90 /* Assets.xcassets */,
 				3360068E1D621B0D00ACDF90 /* LaunchScreen.storyboard */,
 				336006911D621B0D00ACDF90 /* Info.plist */,
-				336006891D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld */,
 				3360067D1D621B0D00ACDF90 /* Supporting Files */,
 			);
 			path = TheWeatherForecast;
@@ -230,8 +240,8 @@
 		336006B41D623A3200ACDF90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				33F93C2A1D64081C005861DD /* APIMappingModel.h */,
-				33F93C2B1D64081C005861DD /* APIMappingModel.m */,
+				33F93C481D65761B005861DD /* Services */,
+				33F93C471D657615005861DD /* Core Data */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -245,6 +255,7 @@
 				33F93C361D654DE0005861DD /* SearchResultsTableViewCell.h */,
 				33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */,
 				33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */,
+				33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -306,6 +317,29 @@
 				33F93C3F1D657161005861DD /* CoreDataManager.m */,
 			);
 			name = Persistence;
+			sourceTree = "<group>";
+		};
+		33F93C471D657615005861DD /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C411D657600005861DD /* Location+CoreDataProperties.h */,
+				33F93C421D657600005861DD /* Location+CoreDataProperties.m */,
+				33F93C431D657600005861DD /* Location.h */,
+				33F93C441D657600005861DD /* Location.m */,
+				336006891D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld */,
+				33F93C491D657671005861DD /* LocationModel.h */,
+				33F93C4A1D657671005861DD /* LocationModel.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		33F93C481D65761B005861DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33F93C2A1D64081C005861DD /* APIMappingModel.h */,
+				33F93C2B1D64081C005861DD /* APIMappingModel.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		49C867BE2113B39A82024948 /* Pods */ = {
@@ -425,6 +459,7 @@
 			files = (
 				336006901D621B0D00ACDF90 /* LaunchScreen.storyboard in Resources */,
 				3360068D1D621B0D00ACDF90 /* Assets.xcassets in Resources */,
+				33F93C4D1D66B5E7005861DD /* ForecastHeaderView.xib in Resources */,
 				336006C11D6271A000ACDF90 /* CityTableViewCell.xib in Resources */,
 				33F93C191D62C150005861DD /* AFNetworking in Resources */,
 				33F93C351D654ADD005861DD /* SearchResultsTableViewCell.xib in Resources */,
@@ -508,6 +543,7 @@
 				33F93C2C1D64081C005861DD /* APIMappingModel.m in Sources */,
 				33F93C291D6403FA005861DD /* Utils.m in Sources */,
 				33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */,
+				33F93C461D657600005861DD /* Location.m in Sources */,
 				33F93C221D63D619005861DD /* APISignalManager.m in Sources */,
 				336006851D621B0D00ACDF90 /* CitiesViewController.m in Sources */,
 				33F93C1A1D62C150005861DD /* AFURLConnectionOperation+RACSupport.m in Sources */,
@@ -515,10 +551,12 @@
 				33F93C171D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m in Sources */,
 				33F93C381D654DE0005861DD /* SearchResultsTableViewCell.m in Sources */,
 				33F93C401D657161005861DD /* CoreDataManager.m in Sources */,
+				33F93C4B1D657671005861DD /* LocationModel.m in Sources */,
 				3360067F1D621B0D00ACDF90 /* main.m in Sources */,
 				33F93C021D628410005861DD /* UIView+XIB.m in Sources */,
 				33F93C1F1D63D52F005861DD /* APIClient.m in Sources */,
 				33F93C181D62C150005861DD /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				33F93C451D657600005861DD /* Location+CoreDataProperties.m in Sources */,
 				3360068B1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

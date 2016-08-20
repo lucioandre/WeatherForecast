@@ -12,6 +12,7 @@
 #import "APIClient.h"
 #import "APIMappingModel.h"
 #import "SearchResultsTableViewCell.h"
+#import "LocationModel.h"
 
 @interface CitySearchViewController ()
 @property (nonatomic, weak) IBOutlet UISearchBar *searchBar;
@@ -64,6 +65,21 @@
 
 #pragma mark - Table View Delegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.searchResults count] > indexPath.row) {
+        SearchResult *searchResult = [self.searchResults objectAtIndex:indexPath.row];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Would you like to add this city to your city list?" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"Add" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [LocationModel insertAsyncNewLocationForSearchResult:searchResult completion:^(Location *location) {
+                UIAlertController *successAlert = [UIAlertController alertControllerWithTitle:@"This city has been added to your list!" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                [successAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+                [self presentViewController:successAlert animated:YES completion:nil];
+            }];
+        }]];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+}
 
 #pragma mark - Memory management
 
