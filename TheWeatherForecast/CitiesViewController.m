@@ -11,6 +11,7 @@
 #import "CitySearchViewController.h"
 #import "LocationModel.h"
 #import "Location.h"
+#import "APIClient.h"
 
 @interface CitiesViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *citiesTableView;
@@ -87,6 +88,18 @@
         [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
         [self presentViewController:alertController animated:YES completion:nil];
         
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.citiesArray count] > indexPath.row) {
+        Location *location = [self.citiesArray objectAtIndex:indexPath.row];
+        NSString *locationDescription = [NSString stringWithFormat:@"%@, %@, %@", location.areaName, location.region, location.country];
+        [APIClient getForecastForLocationDescription:locationDescription withCompletion:^(id response) {
+            if ([response isKindOfClass:[APIWeatherCondition class]]) {
+                
+            }
+        }];
     }
 }
 

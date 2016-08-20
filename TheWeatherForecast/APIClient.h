@@ -10,4 +10,5 @@
 
 @interface APIClient : NSObject
 + (void)getLocationsForSearchKey:(NSString *)searchKey andCompletion:(void (^)(id response))completion;
++ (void)getForecastForLocationDescription:(NSString *)locationDescription withCompletion:(void (^)(id response))completion;
 @end
