@@ -9,9 +9,19 @@
 #import "CityTableViewCell.h"
 #import "UIView+XIB.h"
 
+@interface CityTableViewCell ()
+@property (nonatomic, weak) IBOutlet UILabel *cityNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *regionAndCountryLabel;
+@end
+
 @implementation CityTableViewCell
 
 INIT_XIB
+
+- (void)setCityName:(NSString *)cityName andRegion:(NSString *)region andCountry:(NSString *)country {
+    [self.cityNameLabel setText:cityName];
+    [self.regionAndCountryLabel setText:[NSString stringWithFormat:@"%@, %@", region, country]];
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
