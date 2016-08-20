@@ -145,8 +145,31 @@
                     <view key="view" contentMode="scaleToFill" id="Tor-OL-Knh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-sa-25d">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ubS-Gi-jlU">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ubS-Gi-jlU" id="7CB-d2-p6i">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fsl-sa-25d" firstAttribute="top" secondItem="Tor-OL-Knh" secondAttribute="top" id="B5o-uT-VsG"/>
+                            <constraint firstItem="fsl-sa-25d" firstAttribute="leading" secondItem="Tor-OL-Knh" secondAttribute="leading" id="F9o-pr-ka9"/>
+                            <constraint firstAttribute="trailing" secondItem="fsl-sa-25d" secondAttribute="trailing" id="QU1-WX-WyN"/>
+                            <constraint firstItem="AAP-io-qUa" firstAttribute="top" secondItem="fsl-sa-25d" secondAttribute="bottom" id="scz-yD-uLR"/>
+                        </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDj-jN-91a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

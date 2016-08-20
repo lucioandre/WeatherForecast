@@ -37,7 +37,14 @@
 		33F93C451D657600005861DD /* Location+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C421D657600005861DD /* Location+CoreDataProperties.m */; };
 		33F93C461D657600005861DD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C441D657600005861DD /* Location.m */; };
 		33F93C4B1D657671005861DD /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C4A1D657671005861DD /* LocationModel.m */; };
-		33F93C4D1D66B5E7005861DD /* ForecastHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */; };
+		33F93C4D1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C4C1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib */; };
+		33F93C511D68C496005861DD /* CurrentTemperatureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C501D68C496005861DD /* CurrentTemperatureTableViewCell.xib */; };
+		33F93C531D68C762005861DD /* ConditionDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */; };
+		33F93C551D68CB81005861DD /* DayAverageConditionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C541D68CB81005861DD /* DayAverageConditionTableViewCell.xib */; };
+		33F93C581D68DC89005861DD /* ForecastHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C571D68DC89005861DD /* ForecastHeaderTableViewCell.m */; };
+		33F93C5B1D68DFC0005861DD /* DayAverageConditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C5A1D68DFC0005861DD /* DayAverageConditionTableViewCell.m */; };
+		33F93C5E1D68E34E005861DD /* CurrentTemperatureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */; };
+		33F93C611D68E3A9005861DD /* ConditionDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -117,7 +124,18 @@
 		33F93C441D657600005861DD /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		33F93C491D657671005861DD /* LocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
 		33F93C4A1D657671005861DD /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
-		33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastHeaderView.xib; sourceTree = "<group>"; };
+		33F93C4C1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C501D68C496005861DD /* CurrentTemperatureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentTemperatureTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConditionDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C541D68CB81005861DD /* DayAverageConditionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayAverageConditionTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C561D68DC89005861DD /* ForecastHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastHeaderTableViewCell.h; sourceTree = "<group>"; };
+		33F93C571D68DC89005861DD /* ForecastHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastHeaderTableViewCell.m; sourceTree = "<group>"; };
+		33F93C591D68DFC0005861DD /* DayAverageConditionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayAverageConditionTableViewCell.h; sourceTree = "<group>"; };
+		33F93C5A1D68DFC0005861DD /* DayAverageConditionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayAverageConditionTableViewCell.m; sourceTree = "<group>"; };
+		33F93C5C1D68E34E005861DD /* CurrentTemperatureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentTemperatureTableViewCell.h; sourceTree = "<group>"; };
+		33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentTemperatureTableViewCell.m; sourceTree = "<group>"; };
+		33F93C5F1D68E3A9005861DD /* ConditionDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionDetailsTableViewCell.h; sourceTree = "<group>"; };
+		33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionDetailsTableViewCell.m; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -255,7 +273,18 @@
 				33F93C361D654DE0005861DD /* SearchResultsTableViewCell.h */,
 				33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */,
 				33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */,
-				33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */,
+				33F93C561D68DC89005861DD /* ForecastHeaderTableViewCell.h */,
+				33F93C571D68DC89005861DD /* ForecastHeaderTableViewCell.m */,
+				33F93C4C1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib */,
+				33F93C591D68DFC0005861DD /* DayAverageConditionTableViewCell.h */,
+				33F93C5A1D68DFC0005861DD /* DayAverageConditionTableViewCell.m */,
+				33F93C541D68CB81005861DD /* DayAverageConditionTableViewCell.xib */,
+				33F93C5C1D68E34E005861DD /* CurrentTemperatureTableViewCell.h */,
+				33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */,
+				33F93C501D68C496005861DD /* CurrentTemperatureTableViewCell.xib */,
+				33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */,
+				33F93C5F1D68E3A9005861DD /* ConditionDetailsTableViewCell.h */,
+				33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -457,11 +486,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F93C531D68C762005861DD /* ConditionDetailsTableViewCell.xib in Resources */,
 				336006901D621B0D00ACDF90 /* LaunchScreen.storyboard in Resources */,
 				3360068D1D621B0D00ACDF90 /* Assets.xcassets in Resources */,
-				33F93C4D1D66B5E7005861DD /* ForecastHeaderView.xib in Resources */,
+				33F93C4D1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib in Resources */,
 				336006C11D6271A000ACDF90 /* CityTableViewCell.xib in Resources */,
+				33F93C511D68C496005861DD /* CurrentTemperatureTableViewCell.xib in Resources */,
 				33F93C191D62C150005861DD /* AFNetworking in Resources */,
+				33F93C551D68CB81005861DD /* DayAverageConditionTableViewCell.xib in Resources */,
 				33F93C351D654ADD005861DD /* SearchResultsTableViewCell.xib in Resources */,
 				33F93C261D64024B005861DD /* APIEndPoints.plist in Resources */,
 				336006881D621B0D00ACDF90 /* Main.storyboard in Resources */,
@@ -544,13 +576,17 @@
 				33F93C291D6403FA005861DD /* Utils.m in Sources */,
 				33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */,
 				33F93C461D657600005861DD /* Location.m in Sources */,
+				33F93C611D68E3A9005861DD /* ConditionDetailsTableViewCell.m in Sources */,
+				33F93C581D68DC89005861DD /* ForecastHeaderTableViewCell.m in Sources */,
 				33F93C221D63D619005861DD /* APISignalManager.m in Sources */,
+				33F93C5B1D68DFC0005861DD /* DayAverageConditionTableViewCell.m in Sources */,
 				336006851D621B0D00ACDF90 /* CitiesViewController.m in Sources */,
 				33F93C1A1D62C150005861DD /* AFURLConnectionOperation+RACSupport.m in Sources */,
 				336006821D621B0D00ACDF90 /* AppDelegate.m in Sources */,
 				33F93C171D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m in Sources */,
 				33F93C381D654DE0005861DD /* SearchResultsTableViewCell.m in Sources */,
 				33F93C401D657161005861DD /* CoreDataManager.m in Sources */,
+				33F93C5E1D68E34E005861DD /* CurrentTemperatureTableViewCell.m in Sources */,
 				33F93C4B1D657671005861DD /* LocationModel.m in Sources */,
 				3360067F1D621B0D00ACDF90 /* main.m in Sources */,
 				33F93C021D628410005861DD /* UIView+XIB.m in Sources */,
