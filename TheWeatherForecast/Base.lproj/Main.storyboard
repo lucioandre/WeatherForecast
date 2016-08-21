@@ -41,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HBF-VG-iw4" id="Hxz-qd-q4G">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -90,7 +90,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Vmp-yT-QxP">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="bLe-pc-0RH">
+                        <barButtonItem key="leftBarButtonItem" id="bLe-pc-0RH">
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="AXA-85-tGi">
                                 <rect key="frame" x="20" y="7" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -141,7 +141,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fBw-YY-JzD" id="MCf-l5-PYi">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -149,7 +149,7 @@
                                         <rect key="frame" x="0.0" y="102" width="600" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ofA-Zl-gni" id="eC7-1f-vCW">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
