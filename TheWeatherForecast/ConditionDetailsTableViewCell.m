@@ -7,8 +7,21 @@
 //
 
 #import "ConditionDetailsTableViewCell.h"
+#import "UIView+XIB.h"
+
+@interface ConditionDetailsTableViewCell ()
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *valueLabel;
+@end
 
 @implementation ConditionDetailsTableViewCell
+
+INIT_XIB
+
+- (void)setTitle:(NSString *)title andValue:(NSString *)value {
+    [self.titleLabel setText:title];
+    [self.valueLabel setText:value];
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

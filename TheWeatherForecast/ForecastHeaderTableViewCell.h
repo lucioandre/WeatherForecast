@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ForecastHeaderTableViewCell : UITableViewCell
-
+- (void)setCityName:(NSString *)cityName andCurrentWeather:(NSString *)currentWeather;
 @end

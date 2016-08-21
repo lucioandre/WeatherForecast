@@ -16,4 +16,13 @@
     return [plistDictionary valueForKey:key];
 }
 
++ (NSString *)getDegreeFormattedTemperature:(NSString *)temperature {
+    NSString *degreeCaracther = @"º";
+    if (![temperature hasSuffix:degreeCaracther]) {
+        return [NSString stringWithFormat:@"%@%@",temperature, degreeCaracther];
+    }
+    return temperature;
+}
+
+
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CurrentTemperatureTableViewCell : UITableViewCell
-
+- (void)setTemperatureValue:(NSString *)temperature;
 @end

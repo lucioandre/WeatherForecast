@@ -7,8 +7,21 @@
 //
 
 #import "ForecastHeaderTableViewCell.h"
+#import "UIView+XIB.h"
+
+@interface ForecastHeaderTableViewCell ()
+@property (nonatomic, weak) IBOutlet UILabel *cityName;
+@property (nonatomic, weak) IBOutlet UILabel *currentWeather;
+@end
 
 @implementation ForecastHeaderTableViewCell
+
+INIT_XIB
+
+- (void)setCityName:(NSString *)cityName andCurrentWeather:(NSString *)currentWeather {
+    [self.cityName setText:cityName];
+    [self.currentWeather setText:currentWeather];
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

@@ -12,6 +12,7 @@
 #import "LocationModel.h"
 #import "Location.h"
 #import "APIClient.h"
+#import "ForecastViewController.h"
 
 @interface CitiesViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *citiesTableView;
@@ -97,7 +98,11 @@
         NSString *locationDescription = [NSString stringWithFormat:@"%@, %@, %@", location.areaName, location.region, location.country];
         [APIClient getForecastForLocationDescription:locationDescription withCompletion:^(id response) {
             if ([response isKindOfClass:[APIWeatherCondition class]]) {
-                
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                ForecastViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"ForecastViewController"];
+                viewController.weatherCondition = response;
+                viewController.location = location;
+                [self.navigationController pushViewController:viewController animated:YES];
             }
         }];
     }

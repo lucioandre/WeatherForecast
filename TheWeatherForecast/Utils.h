@@ -10,4 +10,5 @@
 
 @interface Utils : NSObject
 + (NSString *)getEndPointForKey:(NSString *)key;
++ (NSString *)getDegreeFormattedTemperature:(NSString *)temperature;
 @end

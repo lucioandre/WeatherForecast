@@ -7,8 +7,20 @@
 //
 
 #import "CurrentTemperatureTableViewCell.h"
+#import "UIView+XIB.h"
+#import "Utils.h"
+
+@interface CurrentTemperatureTableViewCell ()
+@property (nonatomic, weak) IBOutlet UILabel *temperatureLabel;
+@end
 
 @implementation CurrentTemperatureTableViewCell
+
+INIT_XIB
+
+- (void)setTemperatureValue:(NSString *)temperature {
+    [self.temperatureLabel setText:[Utils getDegreeFormattedTemperature:temperature]];
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

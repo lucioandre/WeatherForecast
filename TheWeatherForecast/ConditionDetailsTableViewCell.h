@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ConditionDetailsTableViewCell : UITableViewCell
-
+- (void)setTitle:(NSString *)title andValue:(NSString *)value;
 @end

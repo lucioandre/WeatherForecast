@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DayAverageConditionTableViewCell : UITableViewCell
-
+- (void)setWeekday:(NSString *)weekday minTemperature:(NSString *)minTemp andMaxTemperature:(NSString *)maxTemp;
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APIMappingModel.h"
+#import "Location.h"
 
 @interface ForecastViewController : UIViewController
-
+@property (nonatomic, strong) APIWeatherCondition *weatherCondition;
+@property (nonatomic, strong) Location *location;
 @end

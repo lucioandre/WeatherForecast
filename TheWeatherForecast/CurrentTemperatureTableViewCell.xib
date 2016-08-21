@@ -5,7 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentTemperatureTableViewCell">
+            <connections>
+                <outlet property="temperatureLabel" destination="grA-hT-MJj" id="Eoz-Oc-Cac"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
@@ -14,15 +18,25 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="23º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grA-hT-MJj">
                     <rect key="frame" x="8" y="8" width="584" height="84"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="76"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khn-2Q-xWe">
+                    <rect key="frame" x="0.0" y="99" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="4gg-z2-W1l"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="khn-2Q-xWe" secondAttribute="bottom" id="2hA-8u-tTp"/>
                 <constraint firstItem="grA-hT-MJj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="7AA-uQ-4d2"/>
+                <constraint firstItem="khn-2Q-xWe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qob-99-nY4"/>
                 <constraint firstAttribute="bottom" secondItem="grA-hT-MJj" secondAttribute="bottom" constant="8" id="e3C-bd-bgh"/>
                 <constraint firstItem="grA-hT-MJj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="hXb-ZD-bb0"/>
+                <constraint firstAttribute="trailing" secondItem="khn-2Q-xWe" secondAttribute="trailing" id="iAH-pp-iRg"/>
                 <constraint firstAttribute="trailing" secondItem="grA-hT-MJj" secondAttribute="trailing" constant="8" id="uBk-75-d1h"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

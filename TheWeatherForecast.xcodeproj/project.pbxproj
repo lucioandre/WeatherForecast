@@ -282,9 +282,9 @@
 				33F93C5C1D68E34E005861DD /* CurrentTemperatureTableViewCell.h */,
 				33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */,
 				33F93C501D68C496005861DD /* CurrentTemperatureTableViewCell.xib */,
-				33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */,
 				33F93C5F1D68E3A9005861DD /* ConditionDetailsTableViewCell.h */,
 				33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */,
+				33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
