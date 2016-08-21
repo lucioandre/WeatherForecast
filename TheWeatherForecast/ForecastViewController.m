@@ -11,6 +11,7 @@
 #import "CurrentTemperatureTableViewCell.h"
 #import "DayAverageConditionTableViewCell.h"
 #import "ConditionDetailsTableViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ForecastViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -96,12 +97,13 @@
     } else if (indexPath.row > 0 && indexPath.row <= [self.weatherCondition.weather count]) {
         DayAverageConditionTableViewCell *dayAverageCell = [self.tableView dequeueReusableCellWithIdentifier:@"dayAverageConditionTableViewCell"];
         DayCondition *dayCondition = [self.weatherCondition.weather objectAtIndex:(indexPath.row-1)];
+        [dayAverageCell.conditionIcon sd_setImageWithURL:[NSURL URLWithString:dayCondition.conditionDetails.weatherIconUrl]];
         [dayAverageCell setWeekday:[self getWeekdayStringForDate:dayCondition.date] minTemperature:dayCondition.mintempC andMaxTemperature:dayCondition.maxtempC];
         return dayAverageCell;
     } else if (indexPath.row > 5) {
         ConditionDetailsTableViewCell *conditionDetailCell = [self.tableView dequeueReusableCellWithIdentifier:@"conditionDetailsTableViewCell"];
-        if (self.arrayOfDetailedInfo.count > (indexPath.row - 6)) {
-            NSDictionary *dic = [self.arrayOfDetailedInfo objectAtIndex:(indexPath.row-6)];
+        if (self.arrayOfDetailedInfo.count > (indexPath.row - [self.weatherCondition.weather count] - 1)) {
+            NSDictionary *dic = [self.arrayOfDetailedInfo objectAtIndex:(indexPath.row-[self.weatherCondition.weather count]-1)];
             [conditionDetailCell setTitle:[dic objectForKey:@"title"] andValue:[dic objectForKey:@"value"]];
         }
         return conditionDetailCell;

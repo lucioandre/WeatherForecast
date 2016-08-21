@@ -25,7 +25,8 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pCC-8d-Ztn">
-                    <rect key="frame" x="448" y="5" width="28" height="28"/>
+                    <rect key="frame" x="441" y="5" width="28" height="28"/>
+                    <color key="backgroundColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="28" id="adk-lR-v8k"/>
                         <constraint firstAttribute="width" constant="28" id="iJD-E8-nBZ"/>
@@ -52,12 +53,12 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="3dm-ad-MC2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="M3B-B3-ZzX"/>
                 <constraint firstAttribute="trailing" secondItem="3dm-ad-MC2" secondAttribute="trailing" constant="20" id="QyI-zm-vcq"/>
                 <constraint firstAttribute="bottom" secondItem="LE9-rX-noS" secondAttribute="bottom" constant="8" id="XlP-We-J6U"/>
-                <constraint firstItem="JaP-Yy-lx1" firstAttribute="leading" secondItem="pCC-8d-Ztn" secondAttribute="trailing" constant="10" id="j9Q-RM-cQX"/>
+                <constraint firstItem="JaP-Yy-lx1" firstAttribute="leading" secondItem="pCC-8d-Ztn" secondAttribute="trailing" constant="17" id="j9Q-RM-cQX"/>
                 <constraint firstItem="pCC-8d-Ztn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="n7c-Zo-Bru"/>
                 <constraint firstItem="3dm-ad-MC2" firstAttribute="leading" secondItem="JaP-Yy-lx1" secondAttribute="trailing" constant="10" id="nqA-hH-fRc"/>
                 <constraint firstItem="LE9-rX-noS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="u5R-1t-rSJ"/>

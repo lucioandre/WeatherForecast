@@ -17,6 +17,8 @@
 @interface CitySearchViewController ()
 @property (nonatomic, weak) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, weak) IBOutlet UITableView *resultsTableView;
+@property (nonatomic, weak) IBOutlet UIView *loadingView;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, strong) NSArray<SearchResult *> *searchResults;
 @end
 
@@ -31,11 +33,24 @@
     self.resultsTableView.rowHeight = UITableViewAutomaticDimension;
 }
 
+#pragma mark - Loading View
+
+- (void)setLoadingViewVisible:(BOOL)isVisible {
+    [self.loadingView setHidden:!isVisible];
+    if (isVisible) {
+        [self.activityIndicator startAnimating];
+    } else {
+        [self.activityIndicator stopAnimating];
+    }
+}
+
 #pragma mark - Search Bar Delegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [searchBar resignFirstResponder];
+    [self setLoadingViewVisible:YES];
     [APIClient getLocationsForSearchKey:searchBar.text andCompletion:^(id response) {
+        [self setLoadingViewVisible:NO];
         if ([response isKindOfClass:[APISearchResults class]]) {
             APISearchResults *resultsResponse = response;
             self.searchResults = [NSArray arrayWithArray:resultsResponse.results];

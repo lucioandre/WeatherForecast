@@ -16,6 +16,9 @@
 
 @interface CitiesViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *citiesTableView;
+@property (nonatomic, weak) IBOutlet UIView *loadingView;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *addCitiesButton;
 @property (nonatomic, strong) NSMutableArray<Location *> *citiesArray;
 @end
 
@@ -67,6 +70,18 @@
     return YES;
 }
 
+#pragma mark - Loading View
+
+- (void)setLoadingViewVisible:(BOOL)isVisible {
+    [self.addCitiesButton setEnabled:!isVisible];
+    [self.loadingView setHidden:!isVisible];
+    if (isVisible) {
+        [self.activityIndicator startAnimating];
+    } else {
+        [self.activityIndicator stopAnimating];
+    }
+}
+
 #pragma mark - Table View Delegate
 
 - (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -96,7 +111,9 @@
     if ([self.citiesArray count] > indexPath.row) {
         Location *location = [self.citiesArray objectAtIndex:indexPath.row];
         NSString *locationDescription = [NSString stringWithFormat:@"%@, %@, %@", location.areaName, location.region, location.country];
+        [self setLoadingViewVisible:YES];
         [APIClient getForecastForLocationDescription:locationDescription withCompletion:^(id response) {
+            [self setLoadingViewVisible:NO];
             if ([response isKindOfClass:[APIWeatherCondition class]]) {
                 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 ForecastViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"ForecastViewController"];

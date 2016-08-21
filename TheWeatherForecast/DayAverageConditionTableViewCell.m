@@ -11,7 +11,6 @@
 
 @interface DayAverageConditionTableViewCell ()
 @property (nonatomic, weak) IBOutlet UILabel *weekdayLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *conditionIcon;
 @property (nonatomic, weak) IBOutlet UILabel *minTemperatureLabel;
 @property (nonatomic, weak) IBOutlet UILabel *maxTemperatureLabel;
 @end
@@ -28,7 +27,9 @@ INIT_XIB
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+   
+    self.conditionIcon.layer.cornerRadius = 6;
+    self.conditionIcon.clipsToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

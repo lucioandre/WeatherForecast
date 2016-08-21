@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cityTableViewCell" id="HBF-VG-iw4" customClass="CityTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cityTableViewCell" id="HBF-VG-iw4" customClass="CityTableViewCell">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HBF-VG-iw4" id="Hxz-qd-q4G">
@@ -51,10 +51,39 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="moT-OC-sCw"/>
                                 </connections>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRD-jn-03Y" userLabel="Loading View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5A-bv-Wi8" userLabel="View Alpha">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1aq-T1-6hT">
+                                        <rect key="frame" x="282" y="249" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="dcN-0W-kSx"/>
+                                            <constraint firstAttribute="height" constant="37" id="pw8-KM-dIU"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="I5A-bv-Wi8" firstAttribute="leading" secondItem="cRD-jn-03Y" secondAttribute="leading" id="f5j-HY-6M2"/>
+                                    <constraint firstAttribute="bottom" secondItem="I5A-bv-Wi8" secondAttribute="bottom" id="fR3-bl-p7V"/>
+                                    <constraint firstAttribute="trailing" secondItem="I5A-bv-Wi8" secondAttribute="trailing" id="jTK-ud-KYV"/>
+                                    <constraint firstItem="1aq-T1-6hT" firstAttribute="centerX" secondItem="cRD-jn-03Y" secondAttribute="centerX" id="k5S-Vx-4TZ"/>
+                                    <constraint firstItem="I5A-bv-Wi8" firstAttribute="top" secondItem="cRD-jn-03Y" secondAttribute="top" id="lbU-fY-8gH"/>
+                                    <constraint firstItem="1aq-T1-6hT" firstAttribute="centerY" secondItem="cRD-jn-03Y" secondAttribute="centerY" id="yjN-Eu-RPh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i6y-64-pT5" secondAttribute="bottom" id="8Ab-5r-PSq"/>
+                            <constraint firstAttribute="trailing" secondItem="cRD-jn-03Y" secondAttribute="trailing" id="D98-jq-xTn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cRD-jn-03Y" secondAttribute="bottom" id="M7s-uF-rO3"/>
+                            <constraint firstItem="cRD-jn-03Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xvu-Am-y7c"/>
+                            <constraint firstItem="cRD-jn-03Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dhr-Bi-yKx"/>
                             <constraint firstItem="i6y-64-pT5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="edf-Tw-yf3"/>
                             <constraint firstAttribute="trailing" secondItem="i6y-64-pT5" secondAttribute="trailing" id="qg9-TR-XNY"/>
                             <constraint firstItem="i6y-64-pT5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s5j-Xm-hlc"/>
@@ -68,7 +97,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="1aq-T1-6hT" id="NTN-Fa-yfU"/>
+                        <outlet property="addCitiesButton" destination="cOq-eI-8aZ" id="hjw-O4-ia8"/>
                         <outlet property="citiesTableView" destination="i6y-64-pT5" id="n4U-x1-ebq"/>
+                        <outlet property="loadingView" destination="cRD-jn-03Y" id="o0Q-4g-2yj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,20 +144,51 @@
                                     <outlet property="delegate" destination="Ljw-xm-EGc" id="Vds-cL-pxc"/>
                                 </connections>
                             </searchBar>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vl-nu-Kbl" userLabel="Loading View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avU-RB-tmV" userLabel="View Alpha">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="r0R-6s-64s">
+                                        <rect key="frame" x="282" y="249" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="BjY-Uu-6On"/>
+                                            <constraint firstAttribute="width" constant="37" id="HHo-hj-7tq"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="r0R-6s-64s" firstAttribute="centerY" secondItem="4vl-nu-Kbl" secondAttribute="centerY" id="15q-dX-EdQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="avU-RB-tmV" secondAttribute="bottom" id="4pz-Dh-Uif"/>
+                                    <constraint firstItem="avU-RB-tmV" firstAttribute="leading" secondItem="4vl-nu-Kbl" secondAttribute="leading" id="GHE-9o-ZXl"/>
+                                    <constraint firstItem="avU-RB-tmV" firstAttribute="top" secondItem="4vl-nu-Kbl" secondAttribute="top" id="PRL-MX-ZWJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="avU-RB-tmV" secondAttribute="trailing" id="cwv-Nr-mJl"/>
+                                    <constraint firstItem="r0R-6s-64s" firstAttribute="centerX" secondItem="4vl-nu-Kbl" secondAttribute="centerX" id="vB7-7e-npU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qe2-WQ-sc5" secondAttribute="trailing" id="131-Kh-Ds8"/>
                             <constraint firstItem="Hch-bF-j5j" firstAttribute="leading" secondItem="xmB-sC-lt3" secondAttribute="leading" id="2Ez-8E-nzg"/>
+                            <constraint firstItem="4vl-nu-Kbl" firstAttribute="top" secondItem="Wmc-it-A9G" secondAttribute="bottom" id="2U1-xE-qv1"/>
                             <constraint firstItem="qe2-WQ-sc5" firstAttribute="leading" secondItem="xmB-sC-lt3" secondAttribute="leading" id="6yh-Bd-XSI"/>
                             <constraint firstItem="Hch-bF-j5j" firstAttribute="top" secondItem="qe2-WQ-sc5" secondAttribute="bottom" id="ILy-qL-zhm"/>
+                            <constraint firstItem="lBo-Wx-c4o" firstAttribute="top" secondItem="4vl-nu-Kbl" secondAttribute="bottom" id="QZf-cB-hPB"/>
                             <constraint firstAttribute="trailing" secondItem="Hch-bF-j5j" secondAttribute="trailing" id="SpM-nt-kG1"/>
                             <constraint firstItem="lBo-Wx-c4o" firstAttribute="top" secondItem="Hch-bF-j5j" secondAttribute="bottom" id="cuz-rr-ZPn"/>
                             <constraint firstItem="qe2-WQ-sc5" firstAttribute="top" secondItem="Wmc-it-A9G" secondAttribute="bottom" id="kdW-kt-7he"/>
+                            <constraint firstItem="4vl-nu-Kbl" firstAttribute="leading" secondItem="xmB-sC-lt3" secondAttribute="leading" id="sBW-i0-H91"/>
+                            <constraint firstAttribute="trailing" secondItem="4vl-nu-Kbl" secondAttribute="trailing" id="xVm-g8-ZaQ"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="r0R-6s-64s" id="gh9-6a-hWG"/>
+                        <outlet property="loadingView" destination="4vl-nu-Kbl" id="zWh-br-0am"/>
                         <outlet property="resultsTableView" destination="Hch-bF-j5j" id="Teq-bO-6Hx"/>
                         <outlet property="searchBar" destination="qe2-WQ-sc5" id="y6x-gT-oiA"/>
                     </connections>
