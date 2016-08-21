@@ -53,6 +53,9 @@
 		33F9579C1D6A11AE0023CB34 /* NSStringPlusUtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F9579B1D6A11AE0023CB34 /* NSStringPlusUtilitiesTests.m */; };
 		33F9579E1D6A132D0023CB34 /* LocationModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F9579D1D6A132D0023CB34 /* LocationModelTests.m */; };
 		33F957A01D6A29AB0023CB34 /* ForecastViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F9579F1D6A29AB0023CB34 /* ForecastViewControllerTests.m */; };
+		33F957A21D6A30A80023CB34 /* APIClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F957A11D6A30A80023CB34 /* APIClientTests.m */; };
+		33F957AA1D6A38570023CB34 /* GetLocationsForSearchKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 33F957A81D6A38570023CB34 /* GetLocationsForSearchKey.json */; };
+		33F957AB1D6A38570023CB34 /* GetForecastForLocationDescription.json in Resources */ = {isa = PBXBuildFile; fileRef = 33F957A91D6A38570023CB34 /* GetForecastForLocationDescription.json */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +149,9 @@
 		33F9579B1D6A11AE0023CB34 /* NSStringPlusUtilitiesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringPlusUtilitiesTests.m; sourceTree = "<group>"; };
 		33F9579D1D6A132D0023CB34 /* LocationModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModelTests.m; sourceTree = "<group>"; };
 		33F9579F1D6A29AB0023CB34 /* ForecastViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastViewControllerTests.m; sourceTree = "<group>"; };
+		33F957A11D6A30A80023CB34 /* APIClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClientTests.m; sourceTree = "<group>"; };
+		33F957A81D6A38570023CB34 /* GetLocationsForSearchKey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GetLocationsForSearchKey.json; sourceTree = "<group>"; };
+		33F957A91D6A38570023CB34 /* GetForecastForLocationDescription.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GetForecastForLocationDescription.json; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B75B6817E12A4F8EB03A94D6 /* libPods-WeatherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -378,14 +384,25 @@
 		33F9578A1D6A0C230023CB34 /* WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				33F957A31D6A32250023CB34 /* Stubs */,
 				33F9578D1D6A0C230023CB34 /* Info.plist */,
 				33F957951D6A0CF30023CB34 /* SettingsTests.m */,
 				33F957991D6A11960023CB34 /* UtilsTests.m */,
 				33F9579B1D6A11AE0023CB34 /* NSStringPlusUtilitiesTests.m */,
 				33F9579D1D6A132D0023CB34 /* LocationModelTests.m */,
 				33F9579F1D6A29AB0023CB34 /* ForecastViewControllerTests.m */,
+				33F957A11D6A30A80023CB34 /* APIClientTests.m */,
 			);
 			path = WeatherTests;
+			sourceTree = "<group>";
+		};
+		33F957A31D6A32250023CB34 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				33F957A81D6A38570023CB34 /* GetLocationsForSearchKey.json */,
+				33F957A91D6A38570023CB34 /* GetForecastForLocationDescription.json */,
+			);
+			name = Stubs;
 			sourceTree = "<group>";
 		};
 		49C867BE2113B39A82024948 /* Pods */ = {
@@ -504,6 +521,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F957AA1D6A38570023CB34 /* GetLocationsForSearchKey.json in Resources */,
+				33F957AB1D6A38570023CB34 /* GetForecastForLocationDescription.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +666,7 @@
 				33F9579C1D6A11AE0023CB34 /* NSStringPlusUtilitiesTests.m in Sources */,
 				33F957A01D6A29AB0023CB34 /* ForecastViewControllerTests.m in Sources */,
 				33F957961D6A0CF30023CB34 /* SettingsTests.m in Sources */,
+				33F957A21D6A30A80023CB34 /* APIClientTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
