@@ -1,0 +1,15 @@
+//
+//  TheWeatherForecast.pch
+//  TheWeatherForecast
+//
+//  Created by Avenue Brazil on 8/21/16.
+//  Copyright © 2016 Lucio. All rights reserved.
+//
+
+#ifndef TheWeatherForecast_pch
+#define TheWeatherForecast_pch
+
+#import "NSString+Utilities.h"
+#import "UIView+XIB.h"
+
+#endif /* TheWeatherForecast_pch */

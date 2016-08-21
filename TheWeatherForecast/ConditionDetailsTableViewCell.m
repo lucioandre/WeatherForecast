@@ -7,7 +7,6 @@
 //
 
 #import "ConditionDetailsTableViewCell.h"
-#import "UIView+XIB.h"
 
 @interface ConditionDetailsTableViewCell ()
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;

@@ -48,6 +48,7 @@
 		33F957781D696EAD0023CB34 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F957771D696EAD0023CB34 /* Settings.m */; };
 		33F9577A1D6977A80023CB34 /* NoResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F957791D6977A80023CB34 /* NoResultsTableViewCell.xib */; };
 		33F9577D1D69785C0023CB34 /* NoResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F9577C1D69785C0023CB34 /* NoResultsTableViewCell.m */; };
+		33F957801D69FCF10023CB34 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F9577F1D69FCF10023CB34 /* NSString+Utilities.m */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +145,9 @@
 		33F957791D6977A80023CB34 /* NoResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoResultsTableViewCell.xib; sourceTree = "<group>"; };
 		33F9577B1D69785C0023CB34 /* NoResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoResultsTableViewCell.h; sourceTree = "<group>"; };
 		33F9577C1D69785C0023CB34 /* NoResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoResultsTableViewCell.m; sourceTree = "<group>"; };
+		33F9577E1D69FCF10023CB34 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		33F9577F1D69FCF10023CB34 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		33F957811D69FEC60023CB34 /* TheWeatherForecast.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheWeatherForecast.pch; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -217,6 +221,7 @@
 				336006861D621B0D00ACDF90 /* Main.storyboard */,
 				336006801D621B0D00ACDF90 /* AppDelegate.h */,
 				336006811D621B0D00ACDF90 /* AppDelegate.m */,
+				33F957811D69FEC60023CB34 /* TheWeatherForecast.pch */,
 				3360068C1D621B0D00ACDF90 /* Assets.xcassets */,
 				3360068E1D621B0D00ACDF90 /* LaunchScreen.storyboard */,
 				336006911D621B0D00ACDF90 /* Info.plist */,
@@ -321,6 +326,8 @@
 				33F93C011D628410005861DD /* UIView+XIB.m */,
 				33F93C271D6403FA005861DD /* Utils.h */,
 				33F93C281D6403FA005861DD /* Utils.m */,
+				33F9577E1D69FCF10023CB34 /* NSString+Utilities.h */,
+				33F9577F1D69FCF10023CB34 /* NSString+Utilities.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -617,6 +624,7 @@
 				33F93C181D62C150005861DD /* AFHTTPSessionManager+RACSupport.m in Sources */,
 				33F9577D1D69785C0023CB34 /* NoResultsTableViewCell.m in Sources */,
 				33F93C451D657600005861DD /* Location+CoreDataProperties.m in Sources */,
+				33F957801D69FCF10023CB34 /* NSString+Utilities.m in Sources */,
 				3360068B1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -761,6 +769,7 @@
 			baseConfigurationReference = 088A2A00D5F138237F2E900D /* Pods-TheWeatherForecast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/TheWeatherForecast.pch";
 				INFOPLIST_FILE = TheWeatherForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecast;
@@ -773,6 +782,7 @@
 			baseConfigurationReference = 51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/TheWeatherForecast.pch";
 				INFOPLIST_FILE = TheWeatherForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecast;

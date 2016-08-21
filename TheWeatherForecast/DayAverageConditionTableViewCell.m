@@ -7,7 +7,6 @@
 //
 
 #import "DayAverageConditionTableViewCell.h"
-#import "UIView+XIB.h"
 
 @interface DayAverageConditionTableViewCell ()
 @property (nonatomic, weak) IBOutlet UILabel *weekdayLabel;

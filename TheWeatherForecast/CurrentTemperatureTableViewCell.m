@@ -7,7 +7,6 @@
 //
 
 #import "CurrentTemperatureTableViewCell.h"
-#import "UIView+XIB.h"
 #import "Utils.h"
 
 @interface CurrentTemperatureTableViewCell ()
@@ -19,7 +18,7 @@
 INIT_XIB
 
 - (void)setTemperatureValue:(NSString *)temperature {
-    [self.temperatureLabel setText:[Utils getDegreeFormattedTemperature:temperature]];
+    [self.temperatureLabel setText:[temperature temperatureDegreeString]];
 }
 
 - (void)awakeFromNib {

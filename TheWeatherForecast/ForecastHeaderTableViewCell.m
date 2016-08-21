@@ -7,7 +7,6 @@
 //
 
 #import "ForecastHeaderTableViewCell.h"
-#import "UIView+XIB.h"
 
 @interface ForecastHeaderTableViewCell ()
 @property (nonatomic, weak) IBOutlet UILabel *cityName;

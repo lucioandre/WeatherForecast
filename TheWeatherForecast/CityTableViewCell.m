@@ -7,7 +7,6 @@
 //
 
 #import "CityTableViewCell.h"
-#import "UIView+XIB.h"
 
 @interface CityTableViewCell ()
 @property (nonatomic, weak) IBOutlet UILabel *cityNameLabel;

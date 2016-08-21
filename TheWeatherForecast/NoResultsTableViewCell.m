@@ -7,7 +7,6 @@
 //
 
 #import "NoResultsTableViewCell.h"
-#import "UIView+XIB.h"
 
 @implementation NoResultsTableViewCell
 
