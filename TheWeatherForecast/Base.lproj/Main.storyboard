@@ -90,6 +90,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Vmp-yT-QxP">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="bLe-pc-0RH">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="AXA-85-tGi">
+                                <rect key="frame" x="20" y="7" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="C"/>
+                                    <segment title="F"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="OaR-Bx-Hcz"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cOq-eI-8aZ">
                             <connections>
                                 <action selector="presentCitySearch:" destination="BYZ-38-t0r" id="Q4a-H3-6JS"/>
@@ -101,6 +114,7 @@
                         <outlet property="addCitiesButton" destination="cOq-eI-8aZ" id="hjw-O4-ia8"/>
                         <outlet property="citiesTableView" destination="i6y-64-pT5" id="n4U-x1-ebq"/>
                         <outlet property="loadingView" destination="cRD-jn-03Y" id="o0Q-4g-2yj"/>
+                        <outlet property="scaleSegmentControl" destination="AXA-85-tGi" id="Nh3-hg-Ngr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -218,7 +232,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="forecastHeaderTableViewCell" id="ubS-Gi-jlU" customClass="ForecastHeaderTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="forecastHeaderTableViewCell" id="ubS-Gi-jlU" customClass="ForecastHeaderTableViewCell">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ubS-Gi-jlU" id="7CB-d2-p6i">
@@ -226,7 +240,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="currentTemperatureTableViewCell" id="MbG-jn-KZO" customClass="CurrentTemperatureTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="currentTemperatureTableViewCell" id="MbG-jn-KZO" customClass="CurrentTemperatureTableViewCell">
                                         <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MbG-jn-KZO" id="s9u-X5-XKO">
@@ -234,7 +248,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayAverageConditionTableViewCell" id="3Kh-fc-vXV" customClass="DayAverageConditionTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="dayAverageConditionTableViewCell" id="3Kh-fc-vXV" customClass="DayAverageConditionTableViewCell">
                                         <rect key="frame" x="0.0" y="180" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Kh-fc-vXV" id="20Y-u7-J8q">
@@ -242,7 +256,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="conditionDetailsTableViewCell" id="GFY-YF-wDE" customClass="ConditionDetailsTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="conditionDetailsTableViewCell" id="GFY-YF-wDE" customClass="ConditionDetailsTableViewCell">
                                         <rect key="frame" x="0.0" y="224" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GFY-YF-wDE" id="3nE-AB-qdM">

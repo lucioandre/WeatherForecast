@@ -13,10 +13,12 @@
 #import "Location.h"
 #import "APIClient.h"
 #import "ForecastViewController.h"
+#import "Settings.h"
 
 @interface CitiesViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *citiesTableView;
 @property (nonatomic, weak) IBOutlet UIView *loadingView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *scaleSegmentControl;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *addCitiesButton;
 @property (nonatomic, strong) NSMutableArray<Location *> *citiesArray;
@@ -31,8 +33,8 @@
     
     self.citiesTableView.estimatedRowHeight = 60;
     self.citiesTableView.rowHeight = UITableViewAutomaticDimension;
-    
-    self.title = @"Weather Forecast";
+    self.title = @"Weather";
+    [self.scaleSegmentControl setSelectedSegmentIndex:([Settings getShouldUseFahrenheit] ? 1 : 0)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -50,6 +52,11 @@
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
+#pragma mark - Segmented Control
+
+- (IBAction)segmentedControlDidChange:(id)sender {
+    [Settings setShouldUseFahrenheit:(self.scaleSegmentControl.selectedSegmentIndex == 1)];
+}
 
 #pragma mark - Table View Data Source
 
@@ -74,6 +81,7 @@
 
 - (void)setLoadingViewVisible:(BOOL)isVisible {
     [self.addCitiesButton setEnabled:!isVisible];
+    [self.scaleSegmentControl setEnabled:!isVisible];
     [self.loadingView setHidden:!isVisible];
     if (isVisible) {
         [self.activityIndicator startAnimating];

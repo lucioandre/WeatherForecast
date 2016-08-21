@@ -45,6 +45,7 @@
 		33F93C5B1D68DFC0005861DD /* DayAverageConditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C5A1D68DFC0005861DD /* DayAverageConditionTableViewCell.m */; };
 		33F93C5E1D68E34E005861DD /* CurrentTemperatureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */; };
 		33F93C611D68E3A9005861DD /* ConditionDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */; };
+		33F957781D696EAD0023CB34 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F957771D696EAD0023CB34 /* Settings.m */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +68,7 @@
 
 /* Begin PBXFileReference section */
 		088A2A00D5F138237F2E900D /* Pods-TheWeatherForecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.debug.xcconfig"; sourceTree = "<group>"; };
-		3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3360067A1D621B0D00ACDF90 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3360067E1D621B0D00ACDF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		336006801D621B0D00ACDF90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		336006811D621B0D00ACDF90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,6 +137,8 @@
 		33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentTemperatureTableViewCell.m; sourceTree = "<group>"; };
 		33F93C5F1D68E3A9005861DD /* ConditionDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionDetailsTableViewCell.h; sourceTree = "<group>"; };
 		33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionDetailsTableViewCell.m; sourceTree = "<group>"; };
+		33F957761D696EAD0023CB34 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		33F957771D696EAD0023CB34 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,7 +192,7 @@
 		3360067B1D621B0D00ACDF90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */,
+				3360067A1D621B0D00ACDF90 /* Weather.app */,
 				336006961D621B0D00ACDF90 /* TheWeatherForecastTests.xctest */,
 				336006A11D621B0D00ACDF90 /* TheWeatherForecastUITests.xctest */,
 			);
@@ -260,6 +263,7 @@
 			children = (
 				33F93C481D65761B005861DD /* Services */,
 				33F93C471D657615005861DD /* Core Data */,
+				33F957751D696E7D0023CB34 /* UserDefaults */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -371,6 +375,15 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		33F957751D696E7D0023CB34 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				33F957761D696EAD0023CB34 /* Settings.h */,
+				33F957771D696EAD0023CB34 /* Settings.m */,
+			);
+			name = UserDefaults;
+			sourceTree = "<group>";
+		};
 		49C867BE2113B39A82024948 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,7 +413,7 @@
 			);
 			name = TheWeatherForecast;
 			productName = TheWeatherForecast;
-			productReference = 3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */;
+			productReference = 3360067A1D621B0D00ACDF90 /* Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 		336006951D621B0D00ACDF90 /* TheWeatherForecastTests */ = {
@@ -571,6 +584,7 @@
 			files = (
 				336006BF1D62716600ACDF90 /* CityTableViewCell.m in Sources */,
 				336006B91D623DFF00ACDF90 /* CitySearchViewController.m in Sources */,
+				33F957781D696EAD0023CB34 /* Settings.m in Sources */,
 				336006BC1D623E3A00ACDF90 /* ForecastViewController.m in Sources */,
 				33F93C2C1D64081C005861DD /* APIMappingModel.m in Sources */,
 				33F93C291D6403FA005861DD /* Utils.m in Sources */,
@@ -740,7 +754,7 @@
 				INFOPLIST_FILE = TheWeatherForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecast;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weather;
 			};
 			name = Debug;
 		};
@@ -752,7 +766,7 @@
 				INFOPLIST_FILE = TheWeatherForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecast;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weather;
 			};
 			name = Release;
 		};

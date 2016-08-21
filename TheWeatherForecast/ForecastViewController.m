@@ -12,6 +12,7 @@
 #import "DayAverageConditionTableViewCell.h"
 #import "ConditionDetailsTableViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "Settings.h"
 
 @interface ForecastViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -92,13 +93,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         CurrentTemperatureTableViewCell *currentTemperatureTableViewCell = [self.tableView dequeueReusableCellWithIdentifier:@"currentTemperatureTableViewCell"];
-        [currentTemperatureTableViewCell setTemperatureValue:self.weatherCondition.currentCondition.temp_C];
+        NSString *temperatureValue = [Settings getShouldUseFahrenheit] ? self.weatherCondition.currentCondition.temp_F : self.weatherCondition.currentCondition.temp_C;
+        [currentTemperatureTableViewCell setTemperatureValue:temperatureValue];
         return currentTemperatureTableViewCell;
     } else if (indexPath.row > 0 && indexPath.row <= [self.weatherCondition.weather count]) {
         DayAverageConditionTableViewCell *dayAverageCell = [self.tableView dequeueReusableCellWithIdentifier:@"dayAverageConditionTableViewCell"];
         DayCondition *dayCondition = [self.weatherCondition.weather objectAtIndex:(indexPath.row-1)];
         [dayAverageCell.conditionIcon sd_setImageWithURL:[NSURL URLWithString:dayCondition.conditionDetails.weatherIconUrl]];
-        [dayAverageCell setWeekday:[self getWeekdayStringForDate:dayCondition.date] minTemperature:dayCondition.mintempC andMaxTemperature:dayCondition.maxtempC];
+        BOOL presentFahrenheit = [Settings getShouldUseFahrenheit];
+        NSString *minTemp = presentFahrenheit ? dayCondition.mintempF : dayCondition.mintempC;
+        NSString *maxTemp = presentFahrenheit ? dayCondition.maxtempF : dayCondition.maxtempC;
+        [dayAverageCell setWeekday:[self getWeekdayStringForDate:dayCondition.date] minTemperature:minTemp andMaxTemperature:maxTemp];
         return dayAverageCell;
     } else if (indexPath.row > 5) {
         ConditionDetailsTableViewCell *conditionDetailCell = [self.tableView dequeueReusableCellWithIdentifier:@"conditionDetailsTableViewCell"];

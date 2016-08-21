@@ -31,6 +31,7 @@
     
     self.resultsTableView.estimatedRowHeight = 71;
     self.resultsTableView.rowHeight = UITableViewAutomaticDimension;
+    
 }
 
 #pragma mark - Loading View
@@ -91,7 +92,9 @@
         [alertController addAction:[UIAlertAction actionWithTitle:@"Add" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [LocationModel insertAsyncNewLocationForSearchResult:searchResult completion:^(Location *location) {
                 UIAlertController *successAlert = [UIAlertController alertControllerWithTitle:@"This city has been added to your list!" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-                [successAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+                [successAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [self.navigationController popViewControllerAnimated:YES];
+                }]];
                 [self presentViewController:successAlert animated:YES completion:nil];
             }];
         }]];
