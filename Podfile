@@ -12,4 +12,5 @@ end
 
 target 'WeatherTests' do
     pod 'Mantle', '~> 2.0'
+    pod 'OHHTTPStubs', '~> 5.1'
 end
