@@ -55,6 +55,10 @@
             APISearchResults *resultsResponse = response;
             self.searchResults = [NSArray arrayWithArray:resultsResponse.results];
             [self.resultsTableView reloadData];
+        } else {
+            UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Opss!" message:@"A error occurred! Please try again after." preferredStyle:UIAlertControllerStyleAlert];
+            [errorAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+            [self presentViewController:errorAlert animated:YES completion:nil];
         }
     }];
 }
@@ -69,7 +73,7 @@
     SearchResultsTableViewCell *searchResultCell = [self.resultsTableView dequeueReusableCellWithIdentifier:@"searchResultsCell"];
     if ([self.searchResults count] > indexPath.row) {
         SearchResult *result = [self.searchResults objectAtIndex:indexPath.row];
-        [searchResultCell setTitle:result.areaNameDescription andDescription:[NSString stringWithFormat:@"%@, %@", result.regionDescription, result.countryDescription]];
+        [searchResultCell setTitle:result.areaNameDescription andDescription:[NSString stringWithFormat:@"%@%@%@", result.regionDescription, ([result.regionDescription length] && [result.countryDescription length] ? @", " : @""), result.countryDescription]];
     }
     return searchResultCell;
 }

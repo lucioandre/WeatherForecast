@@ -20,7 +20,7 @@ INIT_XIB
 
 - (void)setCityName:(NSString *)cityName andRegion:(NSString *)region andCountry:(NSString *)country {
     [self.cityNameLabel setText:cityName];
-    [self.regionAndCountryLabel setText:[NSString stringWithFormat:@"%@, %@", region, country]];
+    [self.regionAndCountryLabel setText:[NSString stringWithFormat:@"%@%@%@", region, ([region length] && [country length] ? @", " : @""), country]];
 }
 
 - (void)awakeFromNib {

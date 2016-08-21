@@ -120,6 +120,10 @@
                 viewController.weatherCondition = response;
                 viewController.location = location;
                 [self.navigationController pushViewController:viewController animated:YES];
+            } else {
+                UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Opss!" message:@"A error occurred! Please try again after." preferredStyle:UIAlertControllerStyleAlert];
+                [errorAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+                [self presentViewController:errorAlert animated:YES completion:nil];
             }
         }];
     }
