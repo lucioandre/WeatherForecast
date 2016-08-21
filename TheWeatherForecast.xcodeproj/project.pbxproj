@@ -218,7 +218,6 @@
 				336006B41D623A3200ACDF90 /* Model */,
 				336006C21D627DAC00ACDF90 /* Utilities */,
 				33F93C0A1D62C042005861DD /* Vendor */,
-				336006861D621B0D00ACDF90 /* Main.storyboard */,
 				336006801D621B0D00ACDF90 /* AppDelegate.h */,
 				336006811D621B0D00ACDF90 /* AppDelegate.m */,
 				33F957811D69FEC60023CB34 /* TheWeatherForecast.pch */,
@@ -263,6 +262,7 @@
 		336006B51D623A6000ACDF90 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				336006861D621B0D00ACDF90 /* Main.storyboard */,
 				336006BD1D62716600ACDF90 /* CityTableViewCell.h */,
 				336006BE1D62716600ACDF90 /* CityTableViewCell.m */,
 				336006C01D6271A000ACDF90 /* CityTableViewCell.xib */,
