@@ -12,6 +12,7 @@
 #import "APIClient.h"
 #import "APIMappingModel.h"
 #import "SearchResultsTableViewCell.h"
+#import "NoResultsTableViewCell.h"
 #import "LocationModel.h"
 
 @interface CitySearchViewController ()
@@ -67,16 +68,24 @@
 #pragma mark - Table View Data Source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (self.searchResults && [self.searchResults count] == 0) {
+        return 1;
+    }
     return [self.searchResults count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    SearchResultsTableViewCell *searchResultCell = [self.resultsTableView dequeueReusableCellWithIdentifier:@"searchResultsCell"];
-    if ([self.searchResults count] > indexPath.row) {
-        SearchResult *result = [self.searchResults objectAtIndex:indexPath.row];
-        [searchResultCell setTitle:result.areaNameDescription andDescription:[NSString stringWithFormat:@"%@%@%@", result.regionDescription, ([result.regionDescription length] && [result.countryDescription length] ? @", " : @""), result.countryDescription]];
+    if (self.searchResults && [self.searchResults count] == 0) {
+        NoResultsTableViewCell *noResultsCell = [self.resultsTableView dequeueReusableCellWithIdentifier:@"noResultsTableViewCell"];
+        return noResultsCell;
+    } else {
+        SearchResultsTableViewCell *searchResultCell = [self.resultsTableView dequeueReusableCellWithIdentifier:@"searchResultsCell"];
+        if ([self.searchResults count] > indexPath.row) {
+            SearchResult *result = [self.searchResults objectAtIndex:indexPath.row];
+            [searchResultCell setTitle:result.areaNameDescription andDescription:[NSString stringWithFormat:@"%@%@%@", result.regionDescription, ([result.regionDescription length] && [result.countryDescription length] ? @", " : @""), result.countryDescription]];
+        }
+        return searchResultCell;
     }
-    return searchResultCell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView anEditRowAtIndexPath:(NSIndexPath *)indexPath {

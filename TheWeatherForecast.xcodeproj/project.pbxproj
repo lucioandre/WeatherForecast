@@ -46,6 +46,8 @@
 		33F93C5E1D68E34E005861DD /* CurrentTemperatureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */; };
 		33F93C611D68E3A9005861DD /* ConditionDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */; };
 		33F957781D696EAD0023CB34 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F957771D696EAD0023CB34 /* Settings.m */; };
+		33F9577A1D6977A80023CB34 /* NoResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F957791D6977A80023CB34 /* NoResultsTableViewCell.xib */; };
+		33F9577D1D69785C0023CB34 /* NoResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F9577C1D69785C0023CB34 /* NoResultsTableViewCell.m */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +141,9 @@
 		33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionDetailsTableViewCell.m; sourceTree = "<group>"; };
 		33F957761D696EAD0023CB34 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		33F957771D696EAD0023CB34 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		33F957791D6977A80023CB34 /* NoResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoResultsTableViewCell.xib; sourceTree = "<group>"; };
+		33F9577B1D69785C0023CB34 /* NoResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoResultsTableViewCell.h; sourceTree = "<group>"; };
+		33F9577C1D69785C0023CB34 /* NoResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoResultsTableViewCell.m; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -209,9 +214,9 @@
 				336006B41D623A3200ACDF90 /* Model */,
 				336006C21D627DAC00ACDF90 /* Utilities */,
 				33F93C0A1D62C042005861DD /* Vendor */,
+				336006861D621B0D00ACDF90 /* Main.storyboard */,
 				336006801D621B0D00ACDF90 /* AppDelegate.h */,
 				336006811D621B0D00ACDF90 /* AppDelegate.m */,
-				336006861D621B0D00ACDF90 /* Main.storyboard */,
 				3360068C1D621B0D00ACDF90 /* Assets.xcassets */,
 				3360068E1D621B0D00ACDF90 /* LaunchScreen.storyboard */,
 				336006911D621B0D00ACDF90 /* Info.plist */,
@@ -289,6 +294,9 @@
 				33F93C5F1D68E3A9005861DD /* ConditionDetailsTableViewCell.h */,
 				33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */,
 				33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */,
+				33F9577B1D69785C0023CB34 /* NoResultsTableViewCell.h */,
+				33F9577C1D69785C0023CB34 /* NoResultsTableViewCell.m */,
+				33F957791D6977A80023CB34 /* NoResultsTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -500,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F93C531D68C762005861DD /* ConditionDetailsTableViewCell.xib in Resources */,
+				33F9577A1D6977A80023CB34 /* NoResultsTableViewCell.xib in Resources */,
 				336006901D621B0D00ACDF90 /* LaunchScreen.storyboard in Resources */,
 				3360068D1D621B0D00ACDF90 /* Assets.xcassets in Resources */,
 				33F93C4D1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib in Resources */,
@@ -606,6 +615,7 @@
 				33F93C021D628410005861DD /* UIView+XIB.m in Sources */,
 				33F93C1F1D63D52F005861DD /* APIClient.m in Sources */,
 				33F93C181D62C150005861DD /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				33F9577D1D69785C0023CB34 /* NoResultsTableViewCell.m in Sources */,
 				33F93C451D657600005861DD /* Location+CoreDataProperties.m in Sources */,
 				3360068B1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld in Sources */,
 			);

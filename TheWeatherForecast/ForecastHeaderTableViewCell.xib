@@ -13,7 +13,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="BELO HORIZONTE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHV-w9-C6I">
@@ -33,7 +33,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="kHV-w9-C6I" secondAttribute="trailing" constant="8" id="ESH-fE-pDc"/>
                 <constraint firstAttribute="trailing" secondItem="WhC-qx-srV" secondAttribute="trailing" constant="8" id="Xqc-eS-Itg"/>
-                <constraint firstAttribute="bottom" secondItem="WhC-qx-srV" secondAttribute="bottom" constant="5" id="a0p-DF-aPA"/>
+                <constraint firstAttribute="bottom" secondItem="WhC-qx-srV" secondAttribute="bottom" constant="13" id="a0p-DF-aPA"/>
                 <constraint firstItem="WhC-qx-srV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fF1-Yb-Wdr"/>
                 <constraint firstItem="kHV-w9-C6I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gJb-Hs-Ukm"/>
                 <constraint firstItem="WhC-qx-srV" firstAttribute="top" secondItem="kHV-w9-C6I" secondAttribute="bottom" id="lvU-CI-AEV"/>
