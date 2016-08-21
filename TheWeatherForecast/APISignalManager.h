@@ -12,4 +12,5 @@
 @interface APISignalManager : NSObject
 - (id)initWithBaseURL:(NSString *)baseURL;
 - (RACSignal *)rac_getLocationsForSearchKey:(NSString *)searchKey;
+- (RACSignal *)rac_getForecastForLocationDescription:(NSString *)locationDescription;
 @end

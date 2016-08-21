@@ -11,9 +11,16 @@
 #import "CitySearchViewController.h"
 #import "LocationModel.h"
 #import "Location.h"
+#import "APIClient.h"
+#import "ForecastViewController.h"
+#import "Settings.h"
 
 @interface CitiesViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *citiesTableView;
+@property (nonatomic, weak) IBOutlet UIView *loadingView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *scaleSegmentControl;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *addCitiesButton;
 @property (nonatomic, strong) NSMutableArray<Location *> *citiesArray;
 @end
 
@@ -26,8 +33,8 @@
     
     self.citiesTableView.estimatedRowHeight = 60;
     self.citiesTableView.rowHeight = UITableViewAutomaticDimension;
-    
-    self.title = @"Weather Forecast";
+    self.title = @"Weather";
+    [self.scaleSegmentControl setSelectedSegmentIndex:([Settings getShouldUseFahrenheit] ? 1 : 0)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -45,6 +52,11 @@
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
+#pragma mark - Segmented Control
+
+- (IBAction)segmentedControlDidChange:(id)sender {
+    [Settings setShouldUseFahrenheit:(self.scaleSegmentControl.selectedSegmentIndex == 1)];
+}
 
 #pragma mark - Table View Data Source
 
@@ -63,6 +75,19 @@
 
 - (BOOL)tableView:(UITableView *)tableView anEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
+}
+
+#pragma mark - Loading View
+
+- (void)setLoadingViewVisible:(BOOL)isVisible {
+    [self.addCitiesButton setEnabled:!isVisible];
+    [self.scaleSegmentControl setEnabled:!isVisible];
+    [self.loadingView setHidden:!isVisible];
+    if (isVisible) {
+        [self.activityIndicator startAnimating];
+    } else {
+        [self.activityIndicator stopAnimating];
+    }
 }
 
 #pragma mark - Table View Delegate
@@ -87,6 +112,28 @@
         [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
         [self presentViewController:alertController animated:YES completion:nil];
         
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.citiesArray count] > indexPath.row) {
+        Location *location = [self.citiesArray objectAtIndex:indexPath.row];
+        NSString *locationDescription = [NSString stringWithFormat:@"%@, %@, %@", location.areaName, location.region, location.country];
+        [self setLoadingViewVisible:YES];
+        [APIClient getForecastForLocationDescription:locationDescription withCompletion:^(id response) {
+            [self setLoadingViewVisible:NO];
+            if ([response isKindOfClass:[APIWeatherCondition class]]) {
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                ForecastViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"ForecastViewController"];
+                viewController.weatherCondition = response;
+                viewController.location = location;
+                [self.navigationController pushViewController:viewController animated:YES];
+            } else {
+                UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Opss!" message:@"A error occurred! Please try again after." preferredStyle:UIAlertControllerStyleAlert];
+                [errorAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+                [self presentViewController:errorAlert animated:YES completion:nil];
+            }
+        }];
     }
 }
 

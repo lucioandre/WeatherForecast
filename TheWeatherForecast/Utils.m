@@ -9,11 +9,9 @@
 #import "Utils.h"
 
 @implementation Utils
-
 + (NSString *)getEndPointForKey:(NSString *)key {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"APIEndPoints" ofType:@"plist"];
     NSDictionary *plistDictionary = [[NSDictionary alloc] initWithContentsOfFile:filePath];
     return [plistDictionary valueForKey:key];
 }
-
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "SearchResultsTableViewCell.h"
-#import "UIView+XIB.h"
 
 @interface SearchResultsTableViewCell ()
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;

@@ -12,11 +12,14 @@
 #import "APIClient.h"
 #import "APIMappingModel.h"
 #import "SearchResultsTableViewCell.h"
+#import "NoResultsTableViewCell.h"
 #import "LocationModel.h"
 
 @interface CitySearchViewController ()
 @property (nonatomic, weak) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, weak) IBOutlet UITableView *resultsTableView;
+@property (nonatomic, weak) IBOutlet UIView *loadingView;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, strong) NSArray<SearchResult *> *searchResults;
 @end
 
@@ -29,17 +32,35 @@
     
     self.resultsTableView.estimatedRowHeight = 71;
     self.resultsTableView.rowHeight = UITableViewAutomaticDimension;
+    
+}
+
+#pragma mark - Loading View
+
+- (void)setLoadingViewVisible:(BOOL)isVisible {
+    [self.loadingView setHidden:!isVisible];
+    if (isVisible) {
+        [self.activityIndicator startAnimating];
+    } else {
+        [self.activityIndicator stopAnimating];
+    }
 }
 
 #pragma mark - Search Bar Delegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [searchBar resignFirstResponder];
+    [self setLoadingViewVisible:YES];
     [APIClient getLocationsForSearchKey:searchBar.text andCompletion:^(id response) {
+        [self setLoadingViewVisible:NO];
         if ([response isKindOfClass:[APISearchResults class]]) {
             APISearchResults *resultsResponse = response;
             self.searchResults = [NSArray arrayWithArray:resultsResponse.results];
             [self.resultsTableView reloadData];
+        } else {
+            UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Opss!" message:@"A error occurred! Please try again after." preferredStyle:UIAlertControllerStyleAlert];
+            [errorAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+            [self presentViewController:errorAlert animated:YES completion:nil];
         }
     }];
 }
@@ -47,16 +68,24 @@
 #pragma mark - Table View Data Source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (self.searchResults && [self.searchResults count] == 0) {
+        return 1;
+    }
     return [self.searchResults count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    SearchResultsTableViewCell *searchResultCell = [self.resultsTableView dequeueReusableCellWithIdentifier:@"searchResultsCell"];
-    if ([self.searchResults count] > indexPath.row) {
-        SearchResult *result = [self.searchResults objectAtIndex:indexPath.row];
-        [searchResultCell setTitle:result.areaNameDescription andDescription:[NSString stringWithFormat:@"%@, %@", result.regionDescription, result.countryDescription]];
+    if (self.searchResults && [self.searchResults count] == 0) {
+        NoResultsTableViewCell *noResultsCell = [self.resultsTableView dequeueReusableCellWithIdentifier:@"noResultsTableViewCell"];
+        return noResultsCell;
+    } else {
+        SearchResultsTableViewCell *searchResultCell = [self.resultsTableView dequeueReusableCellWithIdentifier:@"searchResultsCell"];
+        if ([self.searchResults count] > indexPath.row) {
+            SearchResult *result = [self.searchResults objectAtIndex:indexPath.row];
+            [searchResultCell setTitle:result.areaNameDescription andDescription:[NSString stringWithFormat:@"%@%@%@", result.regionDescription, ([result.regionDescription length] && [result.countryDescription length] ? @", " : @""), result.countryDescription]];
+        }
+        return searchResultCell;
     }
-    return searchResultCell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView anEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,7 +101,9 @@
         [alertController addAction:[UIAlertAction actionWithTitle:@"Add" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [LocationModel insertAsyncNewLocationForSearchResult:searchResult completion:^(Location *location) {
                 UIAlertController *successAlert = [UIAlertController alertControllerWithTitle:@"This city has been added to your list!" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-                [successAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+                [successAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [self.navigationController popViewControllerAnimated:YES];
+                }]];
                 [self presentViewController:successAlert animated:YES completion:nil];
             }];
         }]];

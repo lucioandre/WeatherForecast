@@ -48,4 +48,15 @@ static NSString * const baseURL = @"https://api.worldweatheronline.com";
     }];
 }
 
++ (void)getForecastForLocationDescription:(NSString *)locationDescription withCompletion:(void (^)(id response))completion {
+    [[[self instance].manager rac_getForecastForLocationDescription:locationDescription] subscribeNext:^(id x) {
+        APISearchResults *response = [MTLJSONAdapter modelOfClass:[APIWeatherCondition class] fromJSONDictionary:x error:nil];
+        if (completion) {
+            completion(response);
+        }
+    } error:^(NSError *error) {
+        completion(error);
+    }];
+}
+
 @end

@@ -37,7 +37,18 @@
 		33F93C451D657600005861DD /* Location+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C421D657600005861DD /* Location+CoreDataProperties.m */; };
 		33F93C461D657600005861DD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C441D657600005861DD /* Location.m */; };
 		33F93C4B1D657671005861DD /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C4A1D657671005861DD /* LocationModel.m */; };
-		33F93C4D1D66B5E7005861DD /* ForecastHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */; };
+		33F93C4D1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C4C1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib */; };
+		33F93C511D68C496005861DD /* CurrentTemperatureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C501D68C496005861DD /* CurrentTemperatureTableViewCell.xib */; };
+		33F93C531D68C762005861DD /* ConditionDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */; };
+		33F93C551D68CB81005861DD /* DayAverageConditionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F93C541D68CB81005861DD /* DayAverageConditionTableViewCell.xib */; };
+		33F93C581D68DC89005861DD /* ForecastHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C571D68DC89005861DD /* ForecastHeaderTableViewCell.m */; };
+		33F93C5B1D68DFC0005861DD /* DayAverageConditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C5A1D68DFC0005861DD /* DayAverageConditionTableViewCell.m */; };
+		33F93C5E1D68E34E005861DD /* CurrentTemperatureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */; };
+		33F93C611D68E3A9005861DD /* ConditionDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */; };
+		33F957781D696EAD0023CB34 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F957771D696EAD0023CB34 /* Settings.m */; };
+		33F9577A1D6977A80023CB34 /* NoResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F957791D6977A80023CB34 /* NoResultsTableViewCell.xib */; };
+		33F9577D1D69785C0023CB34 /* NoResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F9577C1D69785C0023CB34 /* NoResultsTableViewCell.m */; };
+		33F957801D69FCF10023CB34 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F9577F1D69FCF10023CB34 /* NSString+Utilities.m */; };
 		83CDDC7CAA39F9555EF83767 /* libPods-TheWeatherForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +71,7 @@
 
 /* Begin PBXFileReference section */
 		088A2A00D5F138237F2E900D /* Pods-TheWeatherForecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.debug.xcconfig"; sourceTree = "<group>"; };
-		3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3360067A1D621B0D00ACDF90 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3360067E1D621B0D00ACDF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		336006801D621B0D00ACDF90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		336006811D621B0D00ACDF90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,7 +128,26 @@
 		33F93C441D657600005861DD /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		33F93C491D657671005861DD /* LocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
 		33F93C4A1D657671005861DD /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
-		33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastHeaderView.xib; sourceTree = "<group>"; };
+		33F93C4C1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C501D68C496005861DD /* CurrentTemperatureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentTemperatureTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConditionDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C541D68CB81005861DD /* DayAverageConditionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayAverageConditionTableViewCell.xib; sourceTree = "<group>"; };
+		33F93C561D68DC89005861DD /* ForecastHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastHeaderTableViewCell.h; sourceTree = "<group>"; };
+		33F93C571D68DC89005861DD /* ForecastHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastHeaderTableViewCell.m; sourceTree = "<group>"; };
+		33F93C591D68DFC0005861DD /* DayAverageConditionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayAverageConditionTableViewCell.h; sourceTree = "<group>"; };
+		33F93C5A1D68DFC0005861DD /* DayAverageConditionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayAverageConditionTableViewCell.m; sourceTree = "<group>"; };
+		33F93C5C1D68E34E005861DD /* CurrentTemperatureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentTemperatureTableViewCell.h; sourceTree = "<group>"; };
+		33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentTemperatureTableViewCell.m; sourceTree = "<group>"; };
+		33F93C5F1D68E3A9005861DD /* ConditionDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionDetailsTableViewCell.h; sourceTree = "<group>"; };
+		33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionDetailsTableViewCell.m; sourceTree = "<group>"; };
+		33F957761D696EAD0023CB34 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		33F957771D696EAD0023CB34 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		33F957791D6977A80023CB34 /* NoResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoResultsTableViewCell.xib; sourceTree = "<group>"; };
+		33F9577B1D69785C0023CB34 /* NoResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoResultsTableViewCell.h; sourceTree = "<group>"; };
+		33F9577C1D69785C0023CB34 /* NoResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoResultsTableViewCell.m; sourceTree = "<group>"; };
+		33F9577E1D69FCF10023CB34 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		33F9577F1D69FCF10023CB34 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		33F957811D69FEC60023CB34 /* TheWeatherForecast.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheWeatherForecast.pch; sourceTree = "<group>"; };
 		51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWeatherForecast/Pods-TheWeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		B9A79CA764B71C7ADF17FA13 /* libPods-TheWeatherForecast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheWeatherForecast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,7 +201,7 @@
 		3360067B1D621B0D00ACDF90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */,
+				3360067A1D621B0D00ACDF90 /* Weather.app */,
 				336006961D621B0D00ACDF90 /* TheWeatherForecastTests.xctest */,
 				336006A11D621B0D00ACDF90 /* TheWeatherForecastUITests.xctest */,
 			);
@@ -188,9 +218,10 @@
 				336006B41D623A3200ACDF90 /* Model */,
 				336006C21D627DAC00ACDF90 /* Utilities */,
 				33F93C0A1D62C042005861DD /* Vendor */,
+				336006861D621B0D00ACDF90 /* Main.storyboard */,
 				336006801D621B0D00ACDF90 /* AppDelegate.h */,
 				336006811D621B0D00ACDF90 /* AppDelegate.m */,
-				336006861D621B0D00ACDF90 /* Main.storyboard */,
+				33F957811D69FEC60023CB34 /* TheWeatherForecast.pch */,
 				3360068C1D621B0D00ACDF90 /* Assets.xcassets */,
 				3360068E1D621B0D00ACDF90 /* LaunchScreen.storyboard */,
 				336006911D621B0D00ACDF90 /* Info.plist */,
@@ -242,6 +273,7 @@
 			children = (
 				33F93C481D65761B005861DD /* Services */,
 				33F93C471D657615005861DD /* Core Data */,
+				33F957751D696E7D0023CB34 /* UserDefaults */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -255,7 +287,21 @@
 				33F93C361D654DE0005861DD /* SearchResultsTableViewCell.h */,
 				33F93C371D654DE0005861DD /* SearchResultsTableViewCell.m */,
 				33F93C341D654ADD005861DD /* SearchResultsTableViewCell.xib */,
-				33F93C4C1D66B5E7005861DD /* ForecastHeaderView.xib */,
+				33F93C561D68DC89005861DD /* ForecastHeaderTableViewCell.h */,
+				33F93C571D68DC89005861DD /* ForecastHeaderTableViewCell.m */,
+				33F93C4C1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib */,
+				33F93C591D68DFC0005861DD /* DayAverageConditionTableViewCell.h */,
+				33F93C5A1D68DFC0005861DD /* DayAverageConditionTableViewCell.m */,
+				33F93C541D68CB81005861DD /* DayAverageConditionTableViewCell.xib */,
+				33F93C5C1D68E34E005861DD /* CurrentTemperatureTableViewCell.h */,
+				33F93C5D1D68E34E005861DD /* CurrentTemperatureTableViewCell.m */,
+				33F93C501D68C496005861DD /* CurrentTemperatureTableViewCell.xib */,
+				33F93C5F1D68E3A9005861DD /* ConditionDetailsTableViewCell.h */,
+				33F93C601D68E3A9005861DD /* ConditionDetailsTableViewCell.m */,
+				33F93C521D68C762005861DD /* ConditionDetailsTableViewCell.xib */,
+				33F9577B1D69785C0023CB34 /* NoResultsTableViewCell.h */,
+				33F9577C1D69785C0023CB34 /* NoResultsTableViewCell.m */,
+				33F957791D6977A80023CB34 /* NoResultsTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -280,6 +326,8 @@
 				33F93C011D628410005861DD /* UIView+XIB.m */,
 				33F93C271D6403FA005861DD /* Utils.h */,
 				33F93C281D6403FA005861DD /* Utils.m */,
+				33F9577E1D69FCF10023CB34 /* NSString+Utilities.h */,
+				33F9577F1D69FCF10023CB34 /* NSString+Utilities.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -342,6 +390,15 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		33F957751D696E7D0023CB34 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				33F957761D696EAD0023CB34 /* Settings.h */,
+				33F957771D696EAD0023CB34 /* Settings.m */,
+			);
+			name = UserDefaults;
+			sourceTree = "<group>";
+		};
 		49C867BE2113B39A82024948 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,7 +428,7 @@
 			);
 			name = TheWeatherForecast;
 			productName = TheWeatherForecast;
-			productReference = 3360067A1D621B0D00ACDF90 /* TheWeatherForecast.app */;
+			productReference = 3360067A1D621B0D00ACDF90 /* Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 		336006951D621B0D00ACDF90 /* TheWeatherForecastTests */ = {
@@ -457,11 +514,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F93C531D68C762005861DD /* ConditionDetailsTableViewCell.xib in Resources */,
+				33F9577A1D6977A80023CB34 /* NoResultsTableViewCell.xib in Resources */,
 				336006901D621B0D00ACDF90 /* LaunchScreen.storyboard in Resources */,
 				3360068D1D621B0D00ACDF90 /* Assets.xcassets in Resources */,
-				33F93C4D1D66B5E7005861DD /* ForecastHeaderView.xib in Resources */,
+				33F93C4D1D66B5E7005861DD /* ForecastHeaderTableViewCell.xib in Resources */,
 				336006C11D6271A000ACDF90 /* CityTableViewCell.xib in Resources */,
+				33F93C511D68C496005861DD /* CurrentTemperatureTableViewCell.xib in Resources */,
 				33F93C191D62C150005861DD /* AFNetworking in Resources */,
+				33F93C551D68CB81005861DD /* DayAverageConditionTableViewCell.xib in Resources */,
 				33F93C351D654ADD005861DD /* SearchResultsTableViewCell.xib in Resources */,
 				33F93C261D64024B005861DD /* APIEndPoints.plist in Resources */,
 				336006881D621B0D00ACDF90 /* Main.storyboard in Resources */,
@@ -539,24 +600,31 @@
 			files = (
 				336006BF1D62716600ACDF90 /* CityTableViewCell.m in Sources */,
 				336006B91D623DFF00ACDF90 /* CitySearchViewController.m in Sources */,
+				33F957781D696EAD0023CB34 /* Settings.m in Sources */,
 				336006BC1D623E3A00ACDF90 /* ForecastViewController.m in Sources */,
 				33F93C2C1D64081C005861DD /* APIMappingModel.m in Sources */,
 				33F93C291D6403FA005861DD /* Utils.m in Sources */,
 				33F93C1B1D62C150005861DD /* RACSubscriber+AFProgressCallbacks.m in Sources */,
 				33F93C461D657600005861DD /* Location.m in Sources */,
+				33F93C611D68E3A9005861DD /* ConditionDetailsTableViewCell.m in Sources */,
+				33F93C581D68DC89005861DD /* ForecastHeaderTableViewCell.m in Sources */,
 				33F93C221D63D619005861DD /* APISignalManager.m in Sources */,
+				33F93C5B1D68DFC0005861DD /* DayAverageConditionTableViewCell.m in Sources */,
 				336006851D621B0D00ACDF90 /* CitiesViewController.m in Sources */,
 				33F93C1A1D62C150005861DD /* AFURLConnectionOperation+RACSupport.m in Sources */,
 				336006821D621B0D00ACDF90 /* AppDelegate.m in Sources */,
 				33F93C171D62C150005861DD /* AFHTTPRequestOperationManager+RACSupport.m in Sources */,
 				33F93C381D654DE0005861DD /* SearchResultsTableViewCell.m in Sources */,
 				33F93C401D657161005861DD /* CoreDataManager.m in Sources */,
+				33F93C5E1D68E34E005861DD /* CurrentTemperatureTableViewCell.m in Sources */,
 				33F93C4B1D657671005861DD /* LocationModel.m in Sources */,
 				3360067F1D621B0D00ACDF90 /* main.m in Sources */,
 				33F93C021D628410005861DD /* UIView+XIB.m in Sources */,
 				33F93C1F1D63D52F005861DD /* APIClient.m in Sources */,
 				33F93C181D62C150005861DD /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				33F9577D1D69785C0023CB34 /* NoResultsTableViewCell.m in Sources */,
 				33F93C451D657600005861DD /* Location+CoreDataProperties.m in Sources */,
+				33F957801D69FCF10023CB34 /* NSString+Utilities.m in Sources */,
 				3360068B1D621B0D00ACDF90 /* TheWeatherForecast.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,10 +769,11 @@
 			baseConfigurationReference = 088A2A00D5F138237F2E900D /* Pods-TheWeatherForecast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/TheWeatherForecast.pch";
 				INFOPLIST_FILE = TheWeatherForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecast;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weather;
 			};
 			name = Debug;
 		};
@@ -713,10 +782,11 @@
 			baseConfigurationReference = 51A8904634B6042EBC2B5449 /* Pods-TheWeatherForecast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/TheWeatherForecast.pch";
 				INFOPLIST_FILE = TheWeatherForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lucio.TheWeatherForecast;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weather;
 			};
 			name = Release;
 		};
