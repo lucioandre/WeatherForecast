@@ -10,11 +10,6 @@ target 'TheWeatherForecast' do
     pod 'SDWebImage', '~>3.8'
 end
 
-target 'TheWeatherForecastTests' do
-
+target 'WeatherTests' do
+    pod 'Mantle', '~> 2.0'
 end
-
-target 'TheWeatherForecastUITests' do
-
-end
-
