@@ -11,7 +11,7 @@
 #import "RACAFNetworking.h"
 #import "Utils.h"
 
-static NSString * const worldWeatherOnlineAPIKey = @"6199285363b948979fa31009161608";
+static NSString * const worldWeatherOnlineAPIKey = @"80407676a49b4c94b66161329171407";
 
 
 @interface APISignalManager ()

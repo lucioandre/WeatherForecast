@@ -105,7 +105,7 @@
         NSString *maxTemp = presentFahrenheit ? dayCondition.maxtempF : dayCondition.maxtempC;
         [dayAverageCell setWeekday:[self getWeekdayStringForDate:dayCondition.date] minTemperature:minTemp andMaxTemperature:maxTemp];
         return dayAverageCell;
-    } else if (indexPath.row > 5) {
+    } else if (indexPath.row > [self.weatherCondition.weather count]) {
         ConditionDetailsTableViewCell *conditionDetailCell = [self.tableView dequeueReusableCellWithIdentifier:@"conditionDetailsTableViewCell"];
         if (self.arrayOfDetailedInfo.count > (indexPath.row - [self.weatherCondition.weather count] - 1)) {
             NSDictionary *dic = [self.arrayOfDetailedInfo objectAtIndex:(indexPath.row-[self.weatherCondition.weather count]-1)];
